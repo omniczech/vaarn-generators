@@ -1,12 +1,15 @@
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Footer = () => {
-	return (
-		<footer className={styles.footer}>
-			Vaults of Vaarn is made by Leo Holt, these generators are made and
-			maintained by Omniczech
-		</footer>
-	);
+  return (
+    <footer className={styles.footer}>
+      <Link href="https://vaultsofvaarn.com/">Vaults of Vaarn</Link> is made by{" "}
+      <Link href="https://graculusdroog.itch.io/">Leo Holt</Link>, these
+      generators are made and maintained by{" "}
+      <Link href="https://github.com/omniczech">Omniczech</Link>
+    </footer>
+  );
 };
 
 export default Footer;
