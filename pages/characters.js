@@ -128,31 +128,35 @@ const Characters = () => {
               })}
           </div>
         </div>
-        <h3>Starting Equipment</h3>
-        <p>
-          <b>Weapon: </b>
-          {weapon.length && (
-            <span>
-              {weapon[0].value} {weapon[1].value} - {weapon[2].value}
-            </span>
-          )}
-        </p>
-        <p>
-          <b>Armor: </b>
-          {armor.length && (
-            <span>
-              {armor[0].value} {armor[1].value}
-            </span>
-          )}
-        </p>
-        <p>
-          <b>Gear: </b>
-          {gear.length && (
-            <span>
-              {gear[0].value}, {gear[1].value}
-            </span>
-          )}
-        </p>
+        <div className={styles.flex}>
+          <div>
+            <h3>Starting Equipment</h3>
+            <p>
+              <b>Weapon: </b>
+              {weapon.length && (
+                <span>
+                  {weapon[0].value} {weapon[1].value} - {weapon[2].value}
+                </span>
+              )}
+            </p>
+            <p>
+              <b>Armor: </b>
+              {armor.length && (
+                <span>
+                  {armor[0].value} {armor[1].value}
+                </span>
+              )}
+            </p>
+            <p>
+              <b>Gear: </b>
+              {gear.length && (
+                <span>
+                  {gear[0].value}, {gear[1].value}
+                </span>
+              )}
+            </p>
+          </div>
+        </div>
       </main>
     </div>
   );
