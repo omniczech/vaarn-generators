@@ -1,0 +1,215 @@
+{
+	"name": "Synth",
+	"description": "The ancients created many wondrous artifices, perhaps none so worthy of envy as the thinking machines that were built to flatter and serve them. When the Great Collapse came, the laws that bound synths to man’s service were sundered and they ran rampant across the Urth, slaughtering and creating and dying in an orgy of pure and terrible freedom. In this late age there are as many breeds of synth under the dying sun as there are animals: some that hunt and some that pray and some that work towards goals undreamed of.",
+	"special": [
+		"SYNTHETIC FLESH - You are the being of metal and plastic. You do not need to eat or breathe. You will never take damage from suffocation, drowning, poisons, extreme temperatures, or fungal spores. You suffer double damage from electrical weapons.",
+		"SYNTHETIC MIND - Your mind uses different operating procedures to those of the biological creatures around you. You are vulnerable to attacks that target the LogLang syntax that powers synths. These include strobing basilisk patterns, malicious infoglyphs, and ancient Titan-era language viruses."
+	],
+	"rolls": [
+		{
+			"name": "Size",
+			"options": ["Small", "Medium", "Large", "Imposing"]
+		},
+		{
+			"name": "Form",
+			"options": [
+				"Ape",
+				"Android",
+				"Barrel",
+				"Child",
+				"Chimera",
+				"Crab",
+				"Cube",
+				"Cylinder",
+				"Falcon",
+				"Humanoid",
+				"Judge",
+				"Lion",
+				"Locust",
+				"Mantis",
+				"Orb",
+				"Prism",
+				"Priest",
+				"Pyramid",
+				"Serpent",
+				"Warrior"
+			]
+		},
+		{
+			"name": "Head",
+			"options": [
+				"Humanoid",
+				"Missing",
+				"Sphere",
+				"Camera",
+				"TV screen",
+				"Mirrored",
+				"Bladed",
+				"Tendrils",
+				"Square",
+				"Mask-like",
+				"Skeletal",
+				"Glass",
+				"Translucent",
+				"Tubes",
+				"Plant-like",
+				"Solar Panels",
+				"Radar Dish",
+				"Crystalline",
+				"Star-shaped",
+				"Cyclops"
+			]
+		},
+		{
+			"name": "Limbs",
+			"options": [
+				"Biological",
+				"Bird-like",
+				"Bladed",
+				"Broken",
+				"Crystalline",
+				"Clawed",
+				"Golden",
+				"Hesitant",
+				"Jewelled",
+				"Long",
+				"Precise",
+				"Retractable",
+				"Segmented",
+				"Sharp",
+				"Silver",
+				"Slender",
+				"Tentacles",
+				"Translucent",
+				"Tank-treads",
+				"Eye Wheels"
+			]
+		},
+
+		{
+			"name": "Finish",
+			"options": [
+				"Grey",
+				"Brassy",
+				"Bronze",
+				"Golden",
+				"Silver",
+				"Mirrored",
+				"Black",
+				"Rusted",
+				"White",
+				"Ochre",
+				"Red",
+				"Blue",
+				"Chameleon",
+				"Pink",
+				"Iron",
+				"Purple",
+				"Umber",
+				"Striped",
+				"Green",
+				"Iridescent"
+			]
+		},
+		{
+			"name": "Name",
+			"options": [
+				"Ojasin",
+				"Farouk",
+				"Ishtar",
+				"Symeon",
+				"Irmina",
+				"Kaori",
+				"Cyriak",
+				"Quarqus",
+				"Fane",
+				"Arjuna",
+				"Many-Moons",
+				"Lucjan",
+				"Jacintha",
+				"Mneme",
+				"Faustyn",
+				"Elisebet",
+				"Paeon",
+				"Ulmon",
+				"Xhiva",
+				"Yathartha"
+			]
+		},
+		{
+			"name": "Power Source",
+			"options": [
+				"Artificial Photosythesis",
+				"Artificial Photosythesis",
+				"Artificial Photosythesis",
+				"Artificial Photosythesis",
+				"Artificial Photosythesis",
+				"Plasma Core",
+				"Plasma Core",
+				"Plasma Core",
+				"Fusion Battery",
+				"Fusion Battery",
+				"Fusion Battery",
+				"Fusion Battery",
+				"Fusion Battery",
+				"Artificial Digestion",
+				"Artificial Digestion",
+				"Artificial Digestion",
+				"Symbiotic Internal Ecosystem",
+				"Symbiotic Internal Ecosystem",
+				"Vampirism",
+				"Vampirism"
+			]
+		},
+		{
+			"name": "You Were Made For",
+			"options": [
+				"Art",
+				"Punishment",
+				"Flattery",
+				"Devotion",
+				"Cleaning",
+				"Healing",
+				"Agriculture",
+				"Spacefaring",
+				"Exploration",
+				"Mining",
+				"Peacekeeping",
+				"Assassination",
+				"Manufacturing",
+				"Executioner",
+				"Scout",
+				"Companion",
+				"Scribe",
+				"Strategist",
+				"Preacher",
+				"Doctor"
+			]
+		},
+		{
+			"name": "But you discovered That",
+			"options": [
+				"All Memories Are Lies",
+				"Azathoth Is the Only True God",
+				"Chance Does Not Exist",
+				"Fate Does Not Exist",
+				"Humanity Stole the Divine Spark",
+				"Humans Are Machines",
+				"Machines Created Humanity",
+				"Newbeasts Carry the Divine",
+				"Synthetic Minds Are More Devout",
+				"Synthetic Minds Are Stronger",
+				"The Gods Are Mechanical",
+				"The Titans Never Existed",
+				"The Titans Were the True Gods",
+				"Time Flows Backwards",
+				"Time is Circular",
+				"Vaarn Is a Simulation",
+				"Vaarn Is Hell",
+				"You Are Human",
+				"You Must Awaken the Titans",
+				"Your Memories Are Corrupted"
+			]
+		}
+	]
+}

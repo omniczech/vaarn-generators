@@ -76,29 +76,30 @@ const Characters = () => {
 				<h1>Character Generator</h1>
 				<button onClick={reroll}>Roll a new one!</button>
 				<div className={styles.flex}>
-                    <div>
-                        <p>
-                            <b>Ancestry:</b> {chosenAncestry.name}
-                        </p>
-                        {abilities.map((ability, i) => {
-                            return (
-                                <p key={ability}>
-                                    <b>{ability}</b>: +{stats[i]} <b>Defense:</b> {stats[i] + 10}
-                                </p>
-                            );
-                        })}
-                    </div>
-                    <div>
-                        {rollTables &&
-                            rollTables.map((table) => {
-                                return (
-                                    <p key={table.rollName}>
-                                        {table.rollName}: {table.value}
-                                    </p>
-                                );
-                            })}
-                    </div>
-                </div>
+					<div>
+						<p>
+							<b>Ancestry:</b> {chosenAncestry.name}
+						</p>
+						{abilities.map((ability, i) => {
+							return (
+								<p key={ability}>
+									<b>{ability}</b>: +{stats[i]} <b>Defense:</b> {stats[i] + 10}
+								</p>
+							);
+						})}
+					</div>
+					<div>
+						{rollTables &&
+							rollTables.map((table) => {
+								return (
+									<p key={table.rollName}>
+										<b>{table.rollName}: </b>
+										{table.value}
+									</p>
+								);
+							})}
+					</div>
+				</div>
 				<p>
 					Description: <em>{chosenAncestry.description}</em>
 				</p>
