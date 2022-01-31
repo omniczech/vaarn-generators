@@ -1,0 +1,111 @@
+{
+	"name": "True-Kin",
+	"description": "The true-kin sealed themselves inside hidden arcologies when the Great Collapse came, and in this fashion they preserved their bodies from the degradations that afflicted those left living upon the surface. The true-kin have fanatically kept their bloodlines free of mutation and parasitic nanomachinery, and closely guard their mastery of the ancients’ technology. The societies they built inside their secluded arcologies were hierarchical and caste-based; traditions the true-kin have carried with them into their re-colonisation of the surface world and establishment of the New Hegemony.",
+	"special": [
+		"PURE OF BLOOD - Do not roll mutations during character creation. You gain Advantage on reaction rolls when you encounter other true-kin. You lose this bonus if you ever become visibly mutated.",
+
+		"INHERITOR - Whenever you encounter pre-Collapse security systems, or guard synths, there is a 50% chance that they will recognise you as their master."
+	],
+	"rolls": [
+		{
+			"name": "Name",
+			"options": [
+				"Benjoe",
+				"Leif",
+				"Xurm",
+				"Kazor",
+				"Essana",
+				"Calista",
+				"Jinny",
+				"Vela",
+				"Leksei",
+				"Ippash",
+				"Lagad",
+				"Myli",
+				"Nirid",
+				"Ardel",
+				"Senefer",
+				"Pharmon",
+				"Mesu",
+				"Lenta",
+				"Goza",
+				"Babl"
+			]
+		},
+		{
+			"name": "Caste",
+			"options": [
+				"Servitor (labourer caste)",
+				"Servitor (labourer caste)",
+				"Servitor (labourer caste)",
+				"Servitor (labourer caste)",
+				"Freeholder (merchant caste)",
+				"Freeholder (merchant caste)",
+				"Freeholder (merchant caste)",
+				"Freeholder (merchant caste)",
+				"Freeholder (merchant caste)",
+				"Optimate (administrator caste)",
+				"Optimate (administrator caste)",
+				"Optimate (administrator caste)",
+				"Optimate (administrator caste)",
+				"Optimate (administrator caste)",
+				"Armiger (warrior caste)",
+				"Armiger (warrior caste)",
+				"Armiger (warrior caste)",
+				"Exultant (sacred aristocracy)",
+				"Exultant (sacred aristocracy)",
+				"Exultant (sacred aristocracy)"
+			]
+		},
+		{
+			"name": "Demeanour",
+			"options": [
+				"Amused",
+				"Bitter",
+				"Morbid",
+				"Bony",
+				"Cheerful",
+				"Cruel",
+				"Flamboyant",
+				"Glowering",
+				"Impish",
+				"Lanky",
+				"Patrician",
+				"Reckless",
+				"Rough",
+				"Rude",
+				"Sly",
+				"Sour",
+				"Stoic",
+				"Foolish",
+				"Warm",
+				"Wolfish"
+			]
+		},
+		{
+			"name": "Distinct Feature",
+			"options": [
+				"Ritual Scars",
+				"Face Tattoos",
+				"Slave Brand",
+				"Heavy Jewellery",
+				"Synthetic Limb",
+				"Strange Voice",
+				"Clone Brand",
+				"Limp",
+				"Strange Pet",
+				"Lacquered Teeth",
+				"Burn Scars",
+				"Octarine Eyes",
+				"Dyed Skin",
+				"Golden Teeth",
+				"Silver Tongue",
+				"Missing Limb",
+				"Missing Eye",
+				"Religious Apparel",
+				"Synthetic Eyes",
+				"Visibly Diseased"
+			]
+		}
+	]
+}
