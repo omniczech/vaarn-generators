@@ -1,0 +1,55 @@
+{
+  "name": "Armor",
+  "rolls": [
+    {
+      "name": "quality",
+      "options": [
+        "Shabby",
+        "Decadent",
+        "Ancestral",
+        "Quicksilver",
+        "Nano-weave",
+        "Spiny",
+        "Dazzling",
+        "Tarnished",
+        "Indigo",
+        "Golden",
+        "Symbiotic",
+        "Biomechanical",
+        "Occult",
+        "Fungal",
+        "Translucent",
+        "Gaudy",
+        "Sacred",
+        "Iridescent",
+        "Crystalline",
+        "Ornate"
+      ]
+    },
+    {
+      "name": "type",
+      "options": [
+        "Desert Robes (1 slot, Armor 11)",
+        "Desert Robes (1 slot, Armor 11)",
+        "Hazard Wrap (2 slots, Armor 12) Immunity from Radiation and Toxins",
+        "Hazard Wrap (2 slots, Armor 12) Immunity from Radiation and Toxins",
+        "War Shirt (2 slots, Armor 12)",
+        "War Shirt (2 slots, Armor 12)",
+        "War Shirt (2 slots, Armor 12)",
+        "War Shirt (2 slots, Armor 12)",
+        "Brigandine (3 slots, Armor 13)",
+        "Brigandine (3 slots, Armor 13)",
+        "Brigandine (3 slots, Armor 13)",
+        "Brigandine (3 slots, Armor 13)",
+        "Brigandine (3 slots, Armor 13)",
+        "Curiass (4 slots, Armor 14)",
+        "Curiass (4 slots, Armor 14)",
+        "Curiass (4 slots, Armor 14)",
+        "Chain-mail (5 slots, Armor 15)",
+        "Chain-mail (5 slots, Armor 15)",
+        "Plate Armor (6 slots, Armor 16) Disadvantage to swim or climb",
+        "Plate Armor (6 slots, Armor 16) Disadvantage to swim or climb"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Gear",
+  "rolls": [
+    {
+      "name": "Gear 1",
+      "options": [
+        "Flashbang (5)",
+        "Magnetic Boots",
+        "Grappling Hook & Rope",
+        "Flare (5)",
+        "Smoke Bomb (5)",
+        "Flask of Oil",
+        "Portable Stove",
+        "Caltrops",
+        "Vial of Acid",
+        "Animal Trap (3)",
+        "Handheld Drill",
+        "Chain & Manacles",
+        "Hand Mirror",
+        "Motion Sensor",
+        "Crowbar",
+        "EMP Grenade (3)",
+        "Skin of Wine",
+        "Tube of Omni-Glue",
+        "Ball Bearings (LOTS)",
+        "Glowstone"
+      ]
+    },
+    {
+      "name": "Gear 2",
+      "options": [
+        "Sleeping Gas (3)",
+        "Oxygen Mask",
+        "Cast Iron Skillet",
+        "Black Clay",
+        "Loaded Dice",
+        "Raucous Whistle",
+        "Luminous Paint",
+        "Drug",
+        "Poison Pill",
+        "Autoglot Translator",
+        "Lock Picks",
+        "Mortar & Pestle",
+        "Strong Liquor",
+        "Hourglass",
+        "Chisel",
+        "Anti-venom (3)",
+        "Welding Torch",
+        "Thermal Goggles",
+        "Fungicide Bomb",
+        "Canary in Cage"
+      ]
+    }
+  ]
+}
