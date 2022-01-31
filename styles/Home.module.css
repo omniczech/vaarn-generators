@@ -116,3 +116,20 @@
     flex-direction: column;
   }
 }
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex >div {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .flex{
+    display: flex;
+    flex-direction: row;
+  }
+}
+

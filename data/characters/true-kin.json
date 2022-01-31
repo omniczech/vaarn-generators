@@ -106,6 +106,106 @@
 				"Synthetic Eyes",
 				"Visibly Diseased"
 			]
+		},
+		{
+			"name": "Body",
+			"options": [
+				"Tall",
+				"Short",
+				"Frail",
+				"Muscular",
+				"Fat",
+				"Thin",
+				"Skeletal",
+				"Hunched",
+				"Lopsided",
+				"Lithe",
+				"Gnarled",
+				"Squat",
+				"Bloated",
+				"Gangly",
+				"Child-like",
+				"Tanned",
+				"Gigantic",
+				"Wiry",
+				"Cyborg",
+				"Injured"
+			]
+		},
+		{
+			"name": "Face",
+			"options": [
+				"Sallow",
+				"Lively",
+				"Cruel",
+				"Wrinkled",
+				"Scarred",
+				"Frowning",
+				"Pale",
+				"Greasy",
+				"Wide",
+				"Narrow",
+				"Sharp",
+				"Hungry",
+				"Haunted",
+				"Jolly",
+				"Round",
+				"Mournful",
+				"Child-like",
+				"Peaceful",
+				"Sleepy",
+				"Branded"
+			]
+		},
+		{
+			"name": "Hair",
+			"options": [
+				"Black",
+				"Brown",
+				"Red",
+				"Blonde",
+				"Grey",
+				"White",
+				"Shaved",
+				"Topknot",
+				"Green",
+				"Orange",
+				"Glowing",
+				"Fungus",
+				"Purple",
+				"Yellow",
+				"Wispy",
+				"Burnt",
+				"Braided",
+				"Greasy",
+				"Matted",
+				"Long"
+			]
+		},
+		{
+			"name": "Attire",
+			"options": [
+				"Rags",
+				"Animal Skins",
+				"Rough Tunic",
+				"Nomad Attire",
+				"Worker's Attire",
+				"Herdsman's Attire",
+				"Slave Clothing",
+				"Exultant's Livery",
+				"Shabby Attire",
+				"Colourful Attire",
+				"Priest's Robes",
+				"Clerk's Uniform",
+				"Hegemony Garb",
+				"Soldier's Clothing",
+				"Flamboyant Attire",
+				"Musician's Attire",
+				"Veiled Attire",
+				"Armiger's Clothing",
+				"Exultant's Clothing",
+				"Expensive Clothing"
+			]
 		}
 	]
 }

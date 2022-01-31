@@ -56,8 +56,8 @@ const Characters = () => {
 		setRollTables(rollAllTables(chosenAncestry.rolls));
 	}, [chosenAncestry]);
 
-    const reroll=()=>{
-        setStats([
+	const reroll = () => {
+		setStats([
 			generateAbility(),
 			generateAbility(),
 			generateAbility(),
@@ -68,40 +68,46 @@ const Characters = () => {
 		setChosenAncestry(randomFromArray(allAncestries));
 
 		setRollTables(rollAllTables(chosenAncestry.rolls));
-    }
+	};
 
 	return (
 		<div className={styles.container}>
 			<main className={styles.main}>
 				<h1>Character Generator</h1>
-                <button onClick={reroll}>Roll a new one!</button>
-				<p>
-					<b>Ancestry:</b> {chosenAncestry.name}
-				</p>
+				<button onClick={reroll}>Roll a new one!</button>
+				<div className={styles.flex}>
+                    <div>
+                        <p>
+                            <b>Ancestry:</b> {chosenAncestry.name}
+                        </p>
+                        {abilities.map((ability, i) => {
+                            return (
+                                <p key={ability}>
+                                    <b>{ability}</b>: +{stats[i]} <b>Defense:</b> {stats[i] + 10}
+                                </p>
+                            );
+                        })}
+                    </div>
+                    <div>
+                        {rollTables &&
+                            rollTables.map((table) => {
+                                return (
+                                    <p key={table.rollName}>
+                                        {table.rollName}: {table.value}
+                                    </p>
+                                );
+                            })}
+                    </div>
+                </div>
 				<p>
 					Description: <em>{chosenAncestry.description}</em>
 				</p>
-				{abilities.map((ability, i) => {
-					return (
-						<p key={ability}>
-							<b>{ability}</b>: +{stats[i]} <b>Defense:</b> {stats[i] + 10}
-						</p>
-					);
-				})}
 				<p>
 					<b>Special Abilities</b>
 				</p>
 				{chosenAncestry.special &&
 					chosenAncestry.special.map((special) => {
 						return <p key={special}>{special}</p>;
-					})}
-				{rollTables &&
-					rollTables.map((table) => {
-						return (
-							<p key={table.rollName}>
-								{table.rollName}: {table.value}
-							</p>
-						);
 					})}
 			</main>
 		</div>
