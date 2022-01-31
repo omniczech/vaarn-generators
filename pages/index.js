@@ -24,9 +24,7 @@ export default function Home() {
         
       </main>
 
-      <footer className={styles.footer}>
-        Vaults of Vaarn is made by Leo Holt, these generators are made and maintained by Omniczech
-      </footer>
+      
     </div>
   )
 }
