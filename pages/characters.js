@@ -6,9 +6,9 @@ import allAncestries from "../data/characters";
 import weapons from "../data/equipment/weapons.json";
 import armors from "../data/equipment/armor.json";
 import gears from "../data/equipment/gear.json";
-import exoticas from "../data/equipment/exotica"
-import mysticGifts from "../data/equipment/mysticGifts"
-import cybernetics from "../data/equipment/cybernetics"
+import exoticas from "../data/equipment/exotica";
+import mysticGifts from "../data/equipment/mysticGifts";
+import cybernetics from "../data/equipment/cybernetics";
 
 import randomFromArray from "../data/utils";
 
@@ -168,13 +168,29 @@ const Characters = () => {
               )}
             </p>
           </div>
-		  <div>
-		  	<h3>Extra Gifts</h3>
-			<p><b>Exotica:</b> {exotica[0].value}</p>
-			<p><em>Choose one of the two below</em></p>
-			<p><b>Mystical Gift:</b> You have the gift of {mysticGift[1].value}. You gained this power {mysticGift[0].value}</p>
-			<p><b>Cybernetic:</b> {cybernetic[0].value[0]} - {cybernetic[0].value[1]} - {cybernetic[0].value[2]}</p>
-		  </div>
+          <div>
+            <h3>Extra Gifts</h3>
+            {exotica.length && (
+              <p>
+                <b>Exotica:</b> {exotica[0].value}
+              </p>
+            )}
+            <p>
+              <em>Choose one of the two below</em>
+            </p>
+            {mysticGift.length && (
+              <p>
+                <b>Mystical Gift:</b> You have the gift of {mysticGift[1].value}
+                . You gained this power {mysticGift[0].value}
+              </p>
+            )}
+            {cybernetic.length && (
+              <p>
+                <b>Cybernetic:</b> {cybernetic[0].value[0]} -{" "}
+                {cybernetic[0].value[1]} - {cybernetic[0].value[2]}
+              </p>
+            )}
+          </div>
         </div>
       </main>
     </div>
