@@ -42,6 +42,7 @@ const rollAllTables = (rolls) => {
 
 const Characters = () => {
   const [chosenAncestry, setChosenAncestry] = useState("");
+  const [manualChosenAncestry, setManualChosenAncestry] = useState("");
 
   const [stats, setStats] = useState([]);
   const [rollTables, setRollTables] = useState([]);
@@ -53,21 +54,7 @@ const Characters = () => {
   const [cybernetic, setCybernetic] = useState([]);
 
   useEffect(() => {
-    setStats([
-      generateAbility(),
-      generateAbility(),
-      generateAbility(),
-      generateAbility(),
-      generateAbility(),
-      generateAbility(),
-    ]);
-    setChosenAncestry(randomFromArray(allAncestries));
-    setWeapon(rollAllTables(weapons.rolls));
-    setArmor(rollAllTables(armors.rolls));
-    setGear(rollAllTables(gears.rolls));
-    setExotica(rollAllTables(exoticas.rolls));
-    setMysticGift(rollAllTables(mysticGifts.rolls));
-    setCybernetic(rollAllTables(cybernetics.rolls));
+    reroll();
   }, []);
 
   useEffect(() => {
@@ -83,8 +70,13 @@ const Characters = () => {
       generateAbility(),
       generateAbility(),
     ]);
-    setChosenAncestry(randomFromArray(allAncestries));
-
+    !manualChosenAncestry
+      ? setChosenAncestry(randomFromArray(allAncestries))
+      : setChosenAncestry(
+          allAncestries.filter((ancestry) => {
+            return ancestry.name === manualChosenAncestry;
+          })[0]
+        );
     setRollTables(rollAllTables(chosenAncestry.rolls));
     setWeapon(rollAllTables(weapons.rolls));
     setArmor(rollAllTables(armors.rolls));
@@ -99,6 +91,21 @@ const Characters = () => {
       <main className={styles.main}>
         <h1>Character Generator</h1>
         <button onClick={reroll}>Roll a new one!</button>
+        <label>
+          Select an Ancestry (--- will choose one at random):{" "}
+          <select onChange={(e) => setManualChosenAncestry(e.target.value)}>
+            <option value="">---</option>
+            <option value="Cacklemaw Exile">Cacklemaw Exile</option>
+            <option value="Cacogen">Cacogen</option>
+            <option value="Faa Nomad">Faa Nomad</option>
+            <option value="Lithling">Lithling</option>
+            <option value="Mycomorph">Mycomorph</option>
+            <option value="Newbeast">Newbeast</option>
+            <option value="Planeyfolk">Planeyfolk</option>
+            <option value="Synth">Synth</option>
+            <option value="True-Kin">True-Kin</option>
+          </select>
+        </label>
         <div className={styles.flex}>
           <div>
             <p>
