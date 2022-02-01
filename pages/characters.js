@@ -61,6 +61,10 @@ const Characters = () => {
     setRollTables(rollAllTables(chosenAncestry.rolls));
   }, [chosenAncestry]);
 
+  useEffect(() => {
+    reroll();
+  }, [manualChosenAncestry]);
+
   const reroll = () => {
     setStats([
       generateAbility(),
