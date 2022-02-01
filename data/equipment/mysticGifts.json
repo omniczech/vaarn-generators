@@ -1,0 +1,54 @@
+{
+  "rolls": [
+    {
+      "name": "Source of Power",
+      "options": [
+        "from a Mystical Crystal",
+        "through Ritual Cannibalism",
+        "from a Psychoactive Fungus",
+        "because of a Nanomachine Infection",
+        "when you were Irridiated at Birth",
+        "through Meditation",
+        "through a Dream Quest",
+        "due to a Parasitic Spirit",
+        "because of Mutation",
+        "from an Addictive Rare Drug",
+        "from your Cybernetic Implants",
+        "by Devouring Memories",
+        "because of Brain Surgery",
+        "through Religion",
+        "from an Ancient Mask",
+        "from an Ancient Ring",
+        "becaus you were Born During Eclipse",
+        "when you Found a Weird Orb",
+        "when you Beheld Azathoth, the Daemon Sultan",
+        "from your time Studying in Lost Archives"
+      ]
+    },
+    {
+      "name": "Your Gift",
+      "options": [
+        "Telekinesis",
+        "Pyrokinesis",
+        "Telepathy",
+        "Memory Extraction",
+        "Mind Control",
+        "Invisibility",
+        "Astral Projection",
+        "Entity Healing Hands",
+        "Paralysing Touch",
+        "Eye Lasers",
+        "Augury",
+        "Inhuman Speed",
+        "Second Sight",
+        "Force Wall",
+        "Generate Lightning",
+        "Ultrasonic Scream",
+        "Levitation",
+        "Summon Orbs",
+        "Cryokinesis",
+        "Induce Sleep"
+      ]
+    }
+  ]
+}
