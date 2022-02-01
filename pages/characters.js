@@ -137,14 +137,11 @@ const Characters = () => {
         </div>
         <div className={styles.flex}>
           <div>
-            <p>
-              <b>Description:</b> {chosenAncestry.description}
-            </p>
+            <h3>Ancestry Description</h3>
+            <p> {chosenAncestry.description}</p>
           </div>
           <div>
-            <p>
-              <b>Special Abilities</b>
-            </p>
+            <h3>Special Abilities</h3>
             {chosenAncestry.special &&
               chosenAncestry.special.map((special) => {
                 return <p key={special}>{special}</p>;

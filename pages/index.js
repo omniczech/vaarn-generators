@@ -1,7 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -13,18 +12,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Generators for Vaults of Vaarn
-        </h1>
+        <h1 className={styles.title}>Generators for Vaults of Vaarn</h1>
 
         <p className={styles.description}>
-          Vaults of Vaarn is a rad RPG made by Leo Holt about exploring a world of blue sand and abandoned ruins. Pick out a thing you want to generate below and enjoy!
+          Vaults of Vaarn is a rad RPG made by Leo Holt about exploring a world
+          of blue sand and abandoned ruins. Pick out a thing you want to
+          generate below and enjoy!
         </p>
         <Link href="/characters">Characters</Link>
-        
       </main>
-
-      
     </div>
-  )
+  );
 }

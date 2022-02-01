@@ -8,6 +8,10 @@ body {
 
 a {
   color: inherit;
+  transition: 0.5s;
+}
+a:hover {
+  opacity: 0.6;
   text-decoration: none;
 }
 

@@ -14,6 +14,15 @@
   align-items: center;
 }
 
+.main p,
+.main label,
+.main button,
+.main select {
+  font-family: "Anonymous Pro", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
 .header {
   display: flex;
   flex: 1;
@@ -36,13 +45,22 @@
 
 .title a {
   color: #0070f3;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .title a:hover,
 .title a:focus,
-.title a:active {
-  text-decoration: underline;
+.title a:active,
+.main a:hover,
+.main a:focus,
+.main a:active,
+.footer a:hover,
+.footer a:focus,
+.footer a:active,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  text-decoration: none;
 }
 
 .title {
