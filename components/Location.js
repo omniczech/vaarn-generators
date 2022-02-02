@@ -14,6 +14,8 @@ const Location = ({ number, refresh }) => {
 	useEffect(() => {
 		if (locationType && regions[camelize(locationType)]) {
 			setDetails(rollAllTables(regions[camelize(locationType)]));
+		} else {
+			setDetails([]);
 		}
 	}, [locationType, refresh]);
 	const roll = () => {
