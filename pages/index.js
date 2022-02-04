@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>Generators for Vaults of Vaarn</h1>
 
         <p className={styles.description}>
-          Vaults of Vaarn is a rad RPG made by Leo Holt about exploring a world
+          Vaults of Vaarn is a rad RPG made by Leo Hunt about exploring a world
           of blue sand and abandoned ruins. Pick out a thing you want to
           generate below and enjoy!
         </p>
