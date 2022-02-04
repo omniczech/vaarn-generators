@@ -16,7 +16,7 @@ import anomaly from "./anomaly";
 import settlement from "./settlement";
 import faaNomadCamp from "./faaNomadCamp";
 import banditCamp from "./banditCamp";
-import tradePost from "./tradepost";
+import tradePost from "./tradePost";
 const regions = {
   landscape: [
     "Featureless Sands",
