@@ -13,12 +13,15 @@ const Location = ({ number, refresh }) => {
     roll();
   }, [refresh]);
   useEffect(() => {
+    refresher();
+  }, [locationType, refresh]);
+  const refresher = () => {
     if (locationType && regions[camelize(locationType)]) {
       setDetails(rollAllTables(regions[camelize(locationType)]));
     } else {
       setDetails([]);
     }
-  }, [locationType, refresh]);
+  };
   const roll = () => {
     setLocationType(randomFromArray(regions.locationType));
   };
@@ -29,13 +32,19 @@ const Location = ({ number, refresh }) => {
         {number} {locationType}
       </h3>
       {details && (
-        <p>
-          {details.map((answer) => (
-            <>
-              {answer.rollName} {answer.value}
-            </>
-          ))}
-        </p>
+        <>
+          <p>
+            {details.map((answer) => (
+              <>
+                {answer.rollName} {answer.value}
+              </>
+            ))}
+          </p>
+          <div>
+            <button onClick={refresher}>Reroll details</button>
+            <button onClick={roll}>Reroll location</button>
+          </div>
+        </>
       )}
     </div>
   );

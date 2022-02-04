@@ -25,7 +25,7 @@ const archive = [
     ],
   },
   {
-    name: " archive of",
+    name: " archive which contains",
     options: [
       "Books (Holy)",
       "Books (Fiction)",
@@ -75,7 +75,7 @@ const archive = [
     ],
   },
   {
-    name: " who want",
+    name: ". They want",
     options: [
       "a Rare Object Retrieved From Elsewhere in Vaarn.",
       "A Stolen Item From the Collection Retrieved.",

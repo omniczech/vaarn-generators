@@ -1,5 +1,46 @@
 .location {
-  width: 33%;
-  padding: 0 1em;
-  float: left;
+  margin: 0.5em;
+  padding: 1em;
+  position: relative;
+  /* border: 1px solid #ccc; */
+}
+
+.location:before,
+.location:after,
+.location > :first-child:before,
+.location > :first-child:after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-color: #5af; /* or whatever colour */
+  border-style: solid; /* or whatever style */
+  content: " ";
+}
+.location:before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+.location:after {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0 0;
+}
+.location > :first-child:before {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
+.location > :first-child:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
+}
+
+.location button {
+  margin-right: 0.5rem;
+}
+.locationcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

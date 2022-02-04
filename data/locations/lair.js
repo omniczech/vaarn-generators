@@ -17,7 +17,7 @@ const lair = [
       "A Foul-smelling Sinkhole inhabited by d6 Walking Wombs. There is a warning in the form of Wide Dragging Tracks In the Sand",
       "A Tall Papery Nest inhabited by 3d6 Tiger Flies. There is a warning in the form of Tell-tale Buzzing",
       "Human-skin Tents inhabited by d4 Regenerators. There is a warning in the form of Crude Idols Made of Bones",
-      "A Roosts on Mesa inhabited by a Thunderstrike Bird. There is a warning in the form of Huge Tar-black Feather Caught on Cactus",
+      "Roosts on a Mesa inhabited by a Thunderstrike Bird. There is a warning in the form of Huge Tar-black Feather Caught on Cactus",
       "A Lurk On Salt Flats inhabited by d4 Glass Tigers. There is a warning in the form of Corpse with Tell-tale Bite Marks",
       "A Poisoned Tree inhabited by an Amaranthine Death-Worm. There is a warning in the form of Huge Sinuous Tracks in the Dirt",
       "A Fungal Thicket inhabited by a Xanthous Mycomorph. There is a warning in the form of Yellow Spores on the Wind",

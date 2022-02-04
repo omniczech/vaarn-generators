@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
+import locationStyles from "../components/Location.module.css";
 import Location from "../components/Location";
 import { randomFromArray } from "../data/utils";
 import regions from "../data/locations/regions";
@@ -51,7 +52,7 @@ const Region = () => {
           <b>Story Seed:</b> {storySeed}
         </p>
         {/* <p>Choose a dice size for each location (Larger is has more variety)</p> */}
-        <div>
+        <div className={locationStyles.locationcontainer}>
           {locationCount.map((location, i) => {
             return <Location key={i} number={i + 1} refresh={refresh} />;
           })}
