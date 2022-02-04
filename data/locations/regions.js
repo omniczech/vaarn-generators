@@ -11,6 +11,12 @@ import arcology from "./arcology";
 import grave from "./grave";
 import scienceMysticsAbode from "./scienceMysticsAbode";
 import hegemonyCamp from "./hegemonyCamp";
+import cacklemawDen from "./cacklemawDen";
+import anomaly from "./anomaly";
+import settlement from "./settlement";
+import faaNomadCamp from "./faaNomadCamp";
+import banditCamp from "./banditCamp";
+import tradePost from "./tradepost";
 const regions = {
   landscape: [
     "Featureless Sands",
@@ -159,9 +165,13 @@ const regions = {
       "psychedelic visions",
     ],
   },
+  anomaly: anomaly,
   archive: archive,
   arcology: arcology,
+  banditCamp: banditCamp,
   bountyHuntersCamp: bountyHuntersCamp,
+  cacklemawDen: cacklemawDen,
+  faaNomadCamp: faaNomadCamp,
   grave: grave,
   hegemonyCamp: hegemonyCamp,
   holyPlace: holyPlace,
@@ -170,6 +180,8 @@ const regions = {
   oasis: oasis,
   ruin: ruin,
   scienceMysticsAbode: scienceMysticsAbode,
+  settlement: settlement,
+  tradePost: tradePost,
   vault: vault,
   wreck: wreck,
 };
