@@ -43,11 +43,15 @@ const Region = () => {
             onChange={changeCount}
           />
         </label>
-        <button onClick={roll}>Roll another one</button>
+        <p>
+          <button onClick={roll}>Roll another one</button>
+        </p>
         <p>
           <b>Landscape:</b> {landscape}
         </p>
-        <p>The region was named after {namesake}</p>
+        <p>
+          <b>The region was named after:</b> {namesake}
+        </p>
         <p>
           <b>Story Seed:</b> {storySeed}
         </p>
