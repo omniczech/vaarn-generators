@@ -27,18 +27,15 @@ const MapGenerator = ({ nodesInput }) => {
   const result2 = array.reduce((reducer, currentNode) => {
     console.log(currentNode);
     const holding = [];
-    const numConnect = randomIntFromInterval(1, 3);
+    const numConnect = randomIntFromInterval(2, 3);
 
     const countConnect = getOccurrence(reducer.flat(), currentNode);
     if (countConnect < numConnect) {
       let i = countConnect;
       while (i < numConnect) {
-        const numD6 = randomIntFromInterval(1, 3);
-        const distance = randomIntFromInterval(1 * numD6, 6 * numD6);
         const newEdge = [
           currentNode,
           randomIntFromInterval(currentNode + 1, array.length),
-          distance.toString(),
         ].sort();
         holding.push(newEdge);
         i++;
@@ -50,7 +47,9 @@ const MapGenerator = ({ nodesInput }) => {
   console.log(result2);
 
   const edges = result2.map((node, i) => {
-    return { from: node[0], to: node[1], label: node[2] + " days of travel" };
+    const numD6 = randomIntFromInterval(1, 3);
+    const distance = randomIntFromInterval(1 * numD6, 6 * numD6);
+    return { from: node[0], to: node[1], label: distance + " days of travel" };
   });
 
   const visJsRef = useRef(null);
