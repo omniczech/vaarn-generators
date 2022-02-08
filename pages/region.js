@@ -57,7 +57,7 @@ const Region = () => {
           <b>Story Seed:</b> {storySeed}
         </p>
         {/* <p>Choose a dice size for each location (Larger is has more variety)</p> */}
-        <MapGenerator nodesInput={locationCount} />
+        <MapGenerator nodesInput={locationCount} refresh={refresh} />
         <div className={locationStyles.locationcontainer}>
           {locationCount.map((location, i) => {
             return <Location key={i} number={i + 1} refresh={refresh} />;

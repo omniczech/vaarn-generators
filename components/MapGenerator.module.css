@@ -1,9 +1,9 @@
 .map {
-  min-height: 50vh;
+  min-height: 70vh;
   width: 100%;
 }
 
 .map > div,
 .map > div > canvas {
-  min-height: 50vh;
+  min-height: 70vh;
 }
