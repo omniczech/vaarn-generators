@@ -7,6 +7,7 @@
   max-width: 1000px;
   width: 80vw;
   margin: 0 auto;
+  min-height: 85vh;
   flex: 1;
   display: flex;
   flex-direction: column;
