@@ -1,9 +1,60 @@
 .map {
   min-height: 70vh;
   width: 100%;
+  position: relative;
+  background-color: #a5d5e8;
+  opacity: 0.8;
+  background-image: linear-gradient(#fff 1px, transparent 1px),
+    linear-gradient(to right, #fff 1px, #e5e5f7 1px);
+  background-size: 20px 20px;
+}
+.map-container {
+  position: relative;
+}
+
+.map-container button {
+  background-color: #0d184d;
+  border: 1px solid #fff;
+  color: #fff;
+  left: 1rem;
+  padding: 5px 10px;
+  position: absolute;
+  top: 1rem;
 }
 
 .map > div,
 .map > div > canvas {
   min-height: 70vh;
+}
+
+.map:before,
+.map:after,
+.map > :first-child:before,
+.map > :first-child:after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-color: #5af; /* or whatever colour */
+  border-style: solid; /* or whatever style */
+  content: " ";
+}
+.map:before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+.map:after {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0 0;
+}
+.map > :first-child:before {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
+.map > :first-child:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
 }

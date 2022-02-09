@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Network } from "vis-network";
+import { rollNdX, randomIntFromInterval } from "../data/utils";
 import styles from "./MapGenerator.module.css";
 
 const MapGenerator = ({ nodesInput, refresh }) => {
@@ -9,17 +10,20 @@ const MapGenerator = ({ nodesInput, refresh }) => {
   const generateNodesAndEdges = () => {
     setNodes(
       nodesInput.map((node, i) => {
-        return { id: i + 1, label: (i + 1).toString() };
+        return {
+          id: i + 1,
+          label: (i + 1).toString(),
+          color: "#0d184d",
+          font: { color: "#fff" },
+          shape: "box",
+          shapeProperties: { borderRadius: 2 },
+          widthConstraint: { minimum: 25 },
+        };
       })
     );
     const array = nodesInput.map((node, i) => {
       return i + 1;
     });
-
-    const randomIntFromInterval = (min, max) => {
-      // min and max included
-      return Math.floor(Math.random() * (max - min + 1) + min);
-    };
 
     const getOccurrence = (array, value) => {
       var count = 0;
@@ -64,7 +68,7 @@ const MapGenerator = ({ nodesInput, refresh }) => {
     setEdges(
       resultEdges.map((node, i) => {
         const numD6 = randomIntFromInterval(1, 3);
-        const distance = randomIntFromInterval(1 * numD6, 6 * numD6);
+        const distance = rollNdX(numD6, 6);
         return {
           from: node[0],
           to: node[1],
@@ -94,15 +98,37 @@ const MapGenerator = ({ nodesInput, refresh }) => {
   useEffect(() => {
     const network =
       visJsRef.current &&
-      new Network(visJsRef.current, { autoresize: true, nodes, edges }, {});
+      new Network(
+        visJsRef.current,
+        {
+          autoresize: true,
+          nodes: {
+            color: {
+              border: "#fff",
+              background: "#97C2FC",
+              highlight: {
+                border: "#2B7CE9",
+                background: "#D2E5FF",
+              },
+              hover: {
+                border: "#000",
+                background: "#D2E5FF",
+              },
+            },
+          },
+          nodes,
+          edges,
+        },
+        {}
+      );
     // Use `network` here to configure events, etc
   }, [visJsRef, nodes, edges]);
 
   return (
-    <>
-      <button onClick={localRefresher}>Regenerate map</button>
+    <div className={styles["map-container"]}>
       <div className={styles.map} ref={visJsRef} />
-    </>
+      <button onClick={localRefresher}>Regenerate map</button>
+    </div>
   );
 };
 

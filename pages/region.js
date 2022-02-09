@@ -40,12 +40,15 @@ const Region = () => {
           <input
             type="number"
             min={4}
+            max={40}
             defaultValue={4}
             onChange={changeCount}
           />
         </label>
         <p>
-          <button onClick={roll}>Roll another one</button>
+          <button onClick={roll}>
+            Roll another Region (Regenerates all content)
+          </button>
         </p>
         <p>
           <b>Landscape:</b> {landscape}

@@ -10,6 +10,20 @@ const rollAllTables = (rolls) => {
     return { rollName: roll.name, value: randomFromArray(roll.options) };
   });
 };
+const randomIntFromInterval = (min, max) => {
+  // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+const rollNdX = (n, x) => {
+  let i = 0;
+  let total = 0;
+  while (i < n) {
+    total = total + randomIntFromInterval(1, x);
+    i++;
+  }
+  return total;
+};
 
 const camelize = (str) => {
   return str
@@ -21,4 +35,10 @@ const camelize = (str) => {
     });
 };
 
-export { randomFromArray, rollAllTables, camelize };
+export {
+  randomFromArray,
+  rollAllTables,
+  camelize,
+  rollNdX,
+  randomIntFromInterval,
+};
