@@ -40,7 +40,7 @@ const MapGenerator = ({ nodesInput, refresh }) => {
       if (countConnect < numConnect) {
         let i = countConnect;
         while (i < numConnect) {
-          const randDest = randomIntFromInterval(currentNode, array.length);
+          const randDest = randomIntFromInterval(1, array.length);
           const newEdge = [currentNode, randDest].sort(compareNumbers);
           console.log(
             newEdge,
@@ -57,15 +57,18 @@ const MapGenerator = ({ nodesInput, refresh }) => {
       }
       return reducer.concat(holding);
     }, []);
-    console.log(result2);
+    const resultEdges = Array.from(
+      new Set(result2.map(JSON.stringify)),
+      JSON.parse
+    );
     setEdges(
-      result2.map((node, i) => {
+      resultEdges.map((node, i) => {
         const numD6 = randomIntFromInterval(1, 3);
         const distance = randomIntFromInterval(1 * numD6, 6 * numD6);
         return {
           from: node[0],
           to: node[1],
-          label: distance + " days of travel",
+          label: distance + " days",
         };
       })
     );
