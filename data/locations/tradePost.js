@@ -1,3 +1,5 @@
+import { sourceOfConflict } from "../shared";
+
 const tradePost = [
   {
     name: "The location is",
@@ -156,28 +158,7 @@ const tradePost = [
   },
   {
     name: " and the cause of this is",
-    options: [
-      "Envy (Property)",
-      "Envy (Success)",
-      "Love (Forbidden)",
-      "Love (Unrequited)",
-      "Love (Triangle)",
-      "Unpaid Debts",
-      "Boredom",
-      "Petty Rivalry",
-      "Robbery",
-      "Gossip",
-      "Adultery",
-      "Conspiracy",
-      "Gluttony",
-      "Mistaken Identity",
-      "Wild, Baseless Accusations",
-      "Addiction (Drink)",
-      "Addiction (Narcotics)",
-      "Shoddy Goods",
-      "Blackmail",
-      "Murder",
-    ],
+    options: sourceOfConflict,
   },
 ];
 export default tradePost;

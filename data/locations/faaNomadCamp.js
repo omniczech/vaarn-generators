@@ -1,3 +1,5 @@
+import { sourceOfConflict } from "../shared";
+
 const faaNomadCamp = [
   {
     name: "The camp is lead by",
@@ -130,28 +132,7 @@ const faaNomadCamp = [
   },
   {
     name: " and the source of the conflict is",
-    options: [
-      "Envy (Property)",
-      "Envy (Success)",
-      "Love (Forbidden)",
-      "Love (Unrequited)",
-      "Love (Triangle)",
-      "Unpaid Debts",
-      "Boredom",
-      "Honor",
-      "Robbery",
-      "Gossip",
-      "Adultery",
-      "Conspiracy",
-      "Gluttony",
-      "Mistaken Identity",
-      "Wild, Baseless Accusations",
-      "Addiction (Drink)",
-      "Addiction (Narcotics)",
-      "Wedding Plans",
-      "Blackmail",
-      "Murder",
-    ],
+    options: sourceOfConflict,
   },
 ];
 export default faaNomadCamp;

@@ -1,3 +1,5 @@
+import { sourceOfConflict } from "../shared";
+
 const settlement = [
   {
     name: "The houses are",
@@ -180,28 +182,7 @@ const settlement = [
   },
   {
     name: " because of",
-    options: [
-      "Envy (Property)",
-      "Envy (Success)",
-      "Love (Forbidden)",
-      "Love (Unrequited)",
-      "Love (Triangle)",
-      "Unpaid Debts",
-      "Boredom",
-      "Taxes",
-      "Robbery",
-      "Gossip",
-      "Adultery",
-      "Conspiracy",
-      "Gluttony",
-      "Mistaken Identity",
-      "Wild, Baseless Accusations",
-      "Addiction (Drink)",
-      "Addiction (Narcotics)",
-      "Wedding Plans",
-      "Blackmail",
-      "Murder",
-    ],
+    options: sourceOfConflict,
   },
 ];
 export default settlement;

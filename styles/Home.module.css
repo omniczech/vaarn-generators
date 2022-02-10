@@ -98,25 +98,6 @@
   max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
@@ -155,4 +136,56 @@
   .flex > div {
     width: 100%;
   }
+}
+
+.card {
+  position: relative;
+  margin: 1rem;
+  flex: 1 0 45%;
+  padding: 1rem;
+}
+.card:before,
+.card:after,
+.card > :first-child:before,
+.card > :first-child:after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-color: #5af; /* or whatever colour */
+  border-style: solid; /* or whatever style */
+  content: " ";
+}
+.card:before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+.card:after {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0 0;
+}
+.card > :first-child:before {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
+.card > :first-child:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
+}
+
+.card button {
+  margin-right: 0.5rem;
+}
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card .divider-above {
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #444;
 }
