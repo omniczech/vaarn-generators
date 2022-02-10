@@ -1,3 +1,5 @@
+import { sourceOfConflict } from "../shared";
+
 const banditCamp = [
   {
     name: "The bandits are",
@@ -131,28 +133,7 @@ const banditCamp = [
   },
   {
     name: " and the source of the conflict is",
-    options: [
-      "Envy (Property)",
-      "Envy (Success)",
-      "Love (Forbidden)",
-      "Love (Unrequited)",
-      "Love (Triangle)",
-      "Unpaid Debts",
-      "Boredom",
-      "Petty Rivalry",
-      "Cheating at Cards",
-      "Gossip",
-      "Adultery",
-      "Conspiracy",
-      "Gluttony",
-      "Mistaken Identity",
-      "Wild, Baseless Accusations",
-      "Addiction (Drink)",
-      "Addiction (Narcotics)",
-      "Division of Loot",
-      "Blackmail",
-      "Murder",
-    ],
+    options: sourceOfConflict,
   },
 ];
 export default banditCamp;
