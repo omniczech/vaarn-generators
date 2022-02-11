@@ -10,7 +10,8 @@ import exoticas from "../data/equipment/exotica";
 import mysticGifts from "../data/equipment/mysticGifts";
 import cybernetics from "../data/equipment/cybernetics";
 
-import { randomFromArray } from "../data/utils";
+import { randomFromArray, rollAllTables } from "../data/utils";
+import ColonRoll from "../components/colonRoll";
 
 const generateAbility = () => {
   const arr = [
@@ -30,15 +31,6 @@ const abilities = [
   "Psyche",
   "Ego",
 ];
-
-const rollAllTables = (rolls) => {
-  if (!rolls) {
-    return null;
-  }
-  return rolls.map((roll) => {
-    return { rollName: roll.name, value: randomFromArray(roll.options) };
-  });
-};
 
 const Characters = () => {
   const [chosenAncestry, setChosenAncestry] = useState("");
@@ -127,10 +119,7 @@ const Characters = () => {
             {rollTables &&
               rollTables.map((table) => {
                 return (
-                  <p key={table.rollName}>
-                    <b>{table.rollName}: </b>
-                    {table.value}
-                  </p>
+                  <ColonRoll rollName={table.rollName} value={table.value} />
                 );
               })}
           </div>
@@ -151,52 +140,61 @@ const Characters = () => {
         <div className={styles.flex}>
           <div>
             <h3>Starting Equipment</h3>
-            <p>
-              <b>Weapon: </b>
-              {weapon.length && (
-                <span>
-                  {weapon[0].value} {weapon[1].value} - {weapon[2].value}
-                </span>
-              )}
-            </p>
-            <p>
-              <b>Armor: </b>
-              {armor.length && (
-                <span>
-                  {armor[0].value} {armor[1].value}
-                </span>
-              )}
-            </p>
-            <p>
-              <b>Gear: </b>
-              {gear.length && (
-                <span>
-                  {gear[0].value}, {gear[1].value}
-                </span>
-              )}
-            </p>
+            {weapon.length && (
+              <ColonRoll
+                rollName="Weapon"
+                value={
+                  weapon[0].value +
+                  " " +
+                  weapon[1].value +
+                  "-" +
+                  weapon[2].value
+                }
+              />
+            )}
+            {armor.length && (
+              <ColonRoll
+                rollName="Armor"
+                value={armor[0].value + ", " + armor[1].value}
+              />
+            )}
+            {gear.length && (
+              <ColonRoll
+                rollName="Gear"
+                value={gear[0].value + ", " + gear[1].value}
+              />
+            )}
           </div>
           <div>
             <h3>Extra Gifts</h3>
             {exotica.length && (
-              <p>
-                <b>Exotica:</b> {exotica[0].value}
-              </p>
+              <ColonRoll rollName="Exotica" value={exotica[0].value} />
             )}
             <p>
               <em>Choose one of the two below</em>
             </p>
             {mysticGift.length && (
-              <p>
-                <b>Mystical Gift:</b> You have the gift of {mysticGift[1].value}
-                . You gained this power {mysticGift[0].value}
-              </p>
+              <ColonRoll
+                rollName="Mystical Gift"
+                value={
+                  "You have the gift of " +
+                  mysticGift[1].value +
+                  ". You gained this power " +
+                  mysticGift[0].value
+                }
+              />
             )}
             {cybernetic.length && (
-              <p>
-                <b>Cybernetic:</b> {cybernetic[0].value[0]} -{" "}
-                {cybernetic[0].value[1]} - {cybernetic[0].value[2]}
-              </p>
+              <ColonRoll
+                rollName="Cybernetic"
+                value={
+                  cybernetic[0].value[0] +
+                  " - " +
+                  cybernetic[0].value[1] +
+                  " - " +
+                  cybernetic[0].value[2]
+                }
+              />
             )}
           </div>
         </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { camelize, rollAllTables, rollNdX } from "../data/utils";
 import assortedTables from "../data/assorted";
 import styles from "../styles/Home.module.css";
+import ColonRoll from "../components/colonRoll";
 const Assorted = () => {
   const [generator, setGenerator] = useState("");
   const [numberOf, setNumberOf] = useState(1);
@@ -48,10 +49,10 @@ const Assorted = () => {
                             <b>Conflict</b>
                           </p>
                         )}
-                        <p key={attr.rollName}>
-                          <b>{attr.rollName}: </b>
-                          {attr.value}
-                        </p>
+                        <ColonRoll
+                          rollName={attr.rollName}
+                          value={attr.value}
+                        />
                       </>
                     );
                   })}

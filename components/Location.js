@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import regions from "../data/locations/regions";
 import { randomFromArray, rollAllTables, camelize } from "../data/utils";
+import ConcatRoll from "./concatRoll";
 import styles from "./Location.module.css";
 
 const Location = ({ number, refresh }) => {
@@ -35,9 +36,11 @@ const Location = ({ number, refresh }) => {
         <>
           <p>
             {details.map((answer) => (
-              <>
-                {answer.rollName} {answer.value}
-              </>
+              <ConcatRoll
+                key={answer.value}
+                rollName={answer.rollName}
+                value={answer.value}
+              />
             ))}
           </p>
           <div>
