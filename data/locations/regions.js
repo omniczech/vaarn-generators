@@ -60,7 +60,7 @@ const regions = {
     "Wreck",
     "Vault",
     "Landmark",
-    "Bandit Camp	",
+    "Bandit Camp",
     "Bounty Hunter's Camp",
     "Lair",
     "Archive",
