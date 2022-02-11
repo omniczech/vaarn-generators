@@ -11,17 +11,4 @@ export default function handler(req, res) {
     }, "");
     res.status(200).json({ type: req.query.type, description: description });
   }
-
-  //   let i = 0;
-  //   const locations = [];
-  //   while (i < ) {
-  //     const type = randomFromArray(regions.locationType);
-  //     const location = {
-  //       type: type,
-  //       rolls: rollAllTables(regions[camelize(type)]),
-  //     };
-  //     locations.push(location);
-  //     i++;
-  //   }
-  //   res.status(200).json({ locations: locations });
 }
