@@ -119,7 +119,11 @@ const Characters = () => {
             {rollTables &&
               rollTables.map((table) => {
                 return (
-                  <ColonRoll rollName={table.rollName} value={table.value} />
+                  <ColonRoll
+                    key={table.rollName + table.value}
+                    rollName={table.rollName}
+                    value={table.value}
+                  />
                 );
               })}
           </div>
