@@ -1,0 +1,174 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  padding: 2rem 3rem;
+  /* max-width: 1000px; */
+  /* width: 80vw; */
+  margin: 0 auto;
+  min-height: 85vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  background-color: #222;
+}
+
+.main p,
+.main label,
+.main button,
+.main select {
+  font-family: "Anonymous Pro", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  border-bottom: 1px solid #cacaca;
+  justify-content: center;
+  align-items: center;
+}
+.header a {
+  margin: 0 1rem;
+}
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  border-top: 1px solid #cacaca;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active,
+.main a:hover,
+.main a:focus,
+.main a:active,
+.footer a:hover,
+.footer a:focus,
+.footer a:active,
+.header a:hover,
+.header a:focus,
+.header a:active {
+  text-decoration: none;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.flex > div {
+  width: 45%;
+}
+
+@media (max-width: 600px) {
+  .flex > div {
+    width: 100%;
+  }
+}
+
+.layer {
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #262963;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.layer > div {
+  transition: 0.5s;
+}
+
+.location {
+  width: 200px;
+  height: 100px;
+  border: 3px solid black;
+  padding: 1rem;
+  background-color: #222;
+  margin-left: 1rem;
+}
+.current {
+  width: 200px;
+  height: 100px;
+  border: 3px solid #ddd;
+  padding: 1rem;
+  background-color: #222;
+  margin-left: 1rem;
+}
+
+.controls {
+}
