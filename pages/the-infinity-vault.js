@@ -12,15 +12,18 @@ const TheInfinityVault = () => {
         description: "",
         detail: randomFromArray(infinityVault.details),
         detailB: randomFromArray(infinityVault.detailsB),
+        visited: true,
       },
     ],
   ]);
 
   const [depth, setDepth] = useState(0);
   const [distance, setDistance] = useState(0);
+  const [entrance, setEntrance] = useState([0, 0]);
   //initial load
   useEffect(() => {}, []);
   useEffect(() => {
+    console.log(distanceFromEntrance(currentCoords));
     if (!locations[depth][distance].name) {
       const temp = locations.map((layer, i) => {
         if (i === depth) {
@@ -31,6 +34,7 @@ const TheInfinityVault = () => {
                 description: "",
                 detail: randomFromArray(infinityVault.details),
                 detailB: randomFromArray(infinityVault.detailsB),
+                visited: true,
               };
             } else {
               return location;
@@ -42,7 +46,7 @@ const TheInfinityVault = () => {
       });
       setlocations(temp);
     }
-  }, [distance, depth]);
+  }, [distance, depth, locations]);
   const deeper = () => {
     if (depth + 1 === locations.length) {
       setlocations(
@@ -58,11 +62,25 @@ const TheInfinityVault = () => {
   const backTheWayWeCame = () => {
     if (depth >= 1) {
       setDepth(depth - 1);
+    } else {
+      const arrayLength = locations[0].length;
+      const newLayer = locations[0].map((location) => {
+        return {};
+      });
+      console.log(newLayer, newLayer.concat(locations));
+      setlocations([newLayer].concat(locations));
+      setEntrance([entrance[0] + 1, entrance[1]]);
     }
   };
   const west = () => {
     if (distance >= 1) {
       setDistance(distance - 1);
+    } else {
+      const remap = locations.map((location) => {
+        return [[]].concat(location);
+      });
+      setlocations(remap);
+      setEntrance([entrance[0], entrance[1] + 1]);
     }
   };
   const east = () => {
@@ -81,22 +99,39 @@ const TheInfinityVault = () => {
     setDistance(j);
   };
   const currentLocation = locations[depth][distance];
+  const currentCoords = [depth, distance];
+  const distanceFromEntrance = (current) => {
+    const distArray = [
+      Math.abs(current[0] - entrance[0]),
+      Math.abs(current[1] - entrance[1]),
+    ];
+    return Math.max(...distArray);
+  };
   return (
     <main className={styles.main}>
       <h1>The Infinity Vault</h1>
       {/* <button>More info</button> */}
       <div className={styles.flex}>
-        <div>
+        <div className={styles.map}>
           {locations.map((layer, i) => {
             return (
               <div className={styles.layer} key={"layer" + i}>
-                Layer {i + 1}
+                <p>Layer {i + 1}</p>
                 {layer.length &&
                   layer.map((location, j) => {
                     const current = i === depth && j === distance;
+                    const isEntrance = i === entrance[0] && j === entrance[1];
                     return (
                       <div
-                        className={current ? styles.current : styles.location}
+                        className={
+                          isEntrance
+                            ? styles.entrance
+                            : current
+                            ? styles.current
+                            : location.visited
+                            ? styles.visited
+                            : styles.location
+                        }
                         key={"room" + i + j}
                         onClick={() => {
                           chooseLocation(i, j);
@@ -122,23 +157,23 @@ const TheInfinityVault = () => {
             </>
           )}
         </div>
-        <div className={styles.controls}>
-          <p>
-            <b>Controls</b>
-          </p>
-          <p>
-            <button onClick={backTheWayWeCame}>North</button>
-            {/* <button>New path back the way we came</button> */}
-          </p>
-          <p>
-            <button onClick={west}>West</button>
-            <button onClick={east}>East</button>
-          </p>
-          <p>
-            <button onClick={deeper}>South</button>
-            {/* <button onClick={deeperNewPath}>Deeper new path</button> */}
-          </p>
-        </div>
+      </div>
+      <div className={styles.controls}>
+        <p>
+          <b>Controls</b>
+        </p>
+        <p>
+          <button onClick={backTheWayWeCame}>North</button>
+          {/* <button>New path back the way we came</button> */}
+        </p>
+        <p>
+          <button onClick={west}>West</button>
+          <button onClick={east}>East</button>
+        </p>
+        <p>
+          <button onClick={deeper}>South</button>
+          {/* <button onClick={deeperNewPath}>Deeper new path</button> */}
+        </p>
       </div>
     </main>
   );
