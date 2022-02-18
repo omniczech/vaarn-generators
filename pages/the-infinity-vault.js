@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Draggable from "react-draggable";
 import ColonRoll from "../components/colonRoll";
 import infinityVault from "../data/infinity";
 import { randomFromArray } from "../data/utils";
@@ -23,7 +24,6 @@ const TheInfinityVault = () => {
   //initial load
   useEffect(() => {}, []);
   useEffect(() => {
-    console.log(distanceFromEntrance(currentCoords));
     if (!locations[depth][distance].name) {
       const temp = locations.map((layer, i) => {
         if (i === depth) {
@@ -169,23 +169,25 @@ const TheInfinityVault = () => {
           </div>
         </div>
       </div>
-      <div className={styles.controls}>
-        <p>
-          <b>Controls</b>
-        </p>
-        <p>
-          <button onClick={backTheWayWeCame}>North</button>
-          {/* <button>New path back the way we came</button> */}
-        </p>
-        <p>
-          <button onClick={west}>West</button>
-          <button onClick={east}>East</button>
-        </p>
-        <p>
-          <button onClick={deeper}>South</button>
-          {/* <button onClick={deeperNewPath}>Deeper new path</button> */}
-        </p>
-      </div>
+      <Draggable>
+        <div className={styles.controls}>
+          <p>
+            <b>Controls</b>
+          </p>
+          <p>
+            <button onClick={backTheWayWeCame}>⇑</button>
+            {/* <button>New path back the way we came</button> */}
+          </p>
+          <p>
+            <button onClick={west}>⇐</button>
+            <button onClick={east}>⇒</button>
+          </p>
+          <p>
+            <button onClick={deeper}>⇓</button>
+            {/* <button onClick={deeperNewPath}>Deeper new path</button> */}
+          </p>
+        </div>
+      </Draggable>
     </main>
   );
 };
