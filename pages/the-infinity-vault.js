@@ -111,51 +111,62 @@ const TheInfinityVault = () => {
     <main className={styles.main}>
       <h1>The Infinity Vault</h1>
       {/* <button>More info</button> */}
-      <div className={styles.flex}>
-        <div className={styles.map}>
-          {locations.map((layer, i) => {
-            return (
-              <div className={styles.layer} key={"layer" + i}>
-                <p>Layer {i + 1}</p>
-                {layer.length &&
-                  layer.map((location, j) => {
-                    const current = i === depth && j === distance;
-                    const isEntrance = i === entrance[0] && j === entrance[1];
-                    return (
-                      <div
-                        className={
-                          isEntrance
-                            ? styles.entrance
-                            : current
-                            ? styles.current
-                            : location.visited
-                            ? styles.visited
-                            : styles.location
-                        }
-                        key={"room" + i + j}
-                        onClick={() => {
-                          chooseLocation(i, j);
-                        }}
-                      >
-                        {location.name}
-                      </div>
-                    );
-                  })}
-              </div>
-            );
-          })}
-        </div>
-        <div>
-          {currentLocation && (
-            <>
-              <h3>Details</h3>
-              <p>
-                <b>{currentLocation.name}</b>
-              </p>
-              <ColonRoll rollName="Detail A" value={currentLocation.detail} />
-              <ColonRoll rollName="Detail B" value={currentLocation.detailB} />
-            </>
-          )}
+      <div>
+        <div className={styles.flex}>
+          <div className={styles.map}>
+            {locations.map((layer, i) => {
+              return (
+                <div className={styles.layer} key={"layer" + i}>
+                  <p>Layer {i + 1}</p>
+                  {layer.length &&
+                    layer.map((location, j) => {
+                      const current = i === depth && j === distance;
+                      const isEntrance = i === entrance[0] && j === entrance[1];
+                      console.log(location.visited);
+                      return (
+                        <div
+                          className={
+                            isEntrance
+                              ? styles.entrance
+                              : current
+                              ? styles.current
+                              : location.visited
+                              ? styles.visited
+                              : styles.location
+                          }
+                          key={"room" + i + j}
+                          onClick={() => {
+                            chooseLocation(i, j);
+                          }}
+                        >
+                          {location.visited && (
+                            <p>
+                              {i},{j}
+                            </p>
+                          )}
+                          {/* {location.name} */}
+                        </div>
+                      );
+                    })}
+                </div>
+              );
+            })}
+          </div>
+          <div>
+            {currentLocation && (
+              <>
+                <h3>Details</h3>
+                <p>
+                  <b>{currentLocation.name}</b>
+                </p>
+                <ColonRoll rollName="Detail A" value={currentLocation.detail} />
+                <ColonRoll
+                  rollName="Detail B"
+                  value={currentLocation.detailB}
+                />
+              </>
+            )}
+          </div>
         </div>
       </div>
       <div className={styles.controls}>
