@@ -2,7 +2,6 @@ const infinityVault = {
   roomTypes: [
     "Supply Storage",
     "Biology Lab",
-    "Physics Lab",
     "Showers",
     "Kitchen",
     "Medical Facility",
@@ -12,7 +11,6 @@ const infinityVault = {
     "Waste disposal",
     "Water filtration and harvesting",
     "An empty room",
-    "Large hallway",
   ],
   details: [
     "Flooded with sand",
@@ -69,12 +67,12 @@ const infinityVault = {
       "A derelict storage space. Boxes of maintenance supplies are everywhere, lights flickering and the smell of cleaning chemicals is everywhere.",
     "Biology Lab":
       "Containers with strangely shaped creatures in liquids are displayed prominently. Boards on the walls contain detailed scientific notes in a strange language.",
-    "Physics Lab": "",
     Showers:
       "Grimy and unkempt, the showers are long since abandoned. Molds grow on the tiles and the scent of mildew hits your nostrils the moment you enter.",
     Kitchen:
       "Left unattended far too long, the kitchen is all but unusable. This room reeks of rotting food and mold.",
-    "Medical Facility": "",
+    "Medical Facility":
+      "Beds for the infirm are in one corner, large sealed medicine cabinets line a wall, all smells sterile and clean",
     "Sleeping space":
       "6 bunk beds, enough to sleep 12 humanoids are present, several lockers are present next to these sleeping positions.",
     "Data Storage Room":
@@ -83,10 +81,10 @@ const infinityVault = {
       "Somewhat looted, this room has racks with various weaponry available on them",
     "Waste disposal":
       "Several disposal containers are here marked with symbols indicating the types of waste they should be used for. There's a faint stench in the room of rotting biological matter as well as sanitation supplies",
-    "Water filtration and harvesting": "",
+    "Water filtration and harvesting":
+      "Moisture flows from unseen mechanisms above into containers where automated systems pump it through filtration systems",
     "An empty room":
-      "Suspiciously clean and well kept, there is no obvious purpose or ",
-    "Large hallway": "",
+      "Suspiciously clean and well kept, there is no obvious purpose or reason for this room.",
   },
 };
 export default infinityVault;

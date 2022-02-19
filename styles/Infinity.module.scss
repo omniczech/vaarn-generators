@@ -1,3 +1,6 @@
+$back-ground-mid: #444;
+$back-ground-dark: #222;
+
 .container {
   padding: 0 2rem;
 }
@@ -14,7 +17,7 @@
   align-items: center;
   position: relative;
   color: #fff;
-  background-color: #222;
+  background-color: $back-ground-dark;
 }
 
 .main p,
@@ -24,31 +27,6 @@
   font-family: "Anonymous Pro", sans-serif;
   letter-spacing: 1px;
   line-height: 1.4em;
-}
-
-.header {
-  display: flex;
-  flex: 1;
-  padding: 1rem 0;
-  border-bottom: 1px solid #cacaca;
-  justify-content: center;
-  align-items: center;
-}
-.header a {
-  margin: 0 1rem;
-}
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 1rem 0;
-  border-top: 1px solid #cacaca;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: underline;
 }
 
 .title a:hover,
@@ -158,7 +136,7 @@
 .location {
   border: 3px solid black;
   padding: 0 1rem;
-  background-color: #222;
+  background-color: $back-ground-dark;
   margin-left: 1rem;
   min-width: 90px;
   position: relative;
@@ -168,10 +146,10 @@
   background-color: rgb(56, 67, 56);
 }
 .visited {
-  background-color: #444;
+  background-color: $back-ground-mid;
 }
 .entrance {
-  border: 3px solid rgb(172, 233, 151);
+  border: 3px solid rgb(151, 189, 233);
   background-color: #666;
 }
 
@@ -194,8 +172,8 @@
 .up {
   border-left: 3px solid black;
   border-right: 3px solid black;
-  border-top: 3px solid #444;
-  border-bottom: 3px solid #444;
+  border-top: 3px solid $back-ground-mid;
+  border-bottom: 3px solid $back-ground-mid;
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
@@ -205,8 +183,8 @@
 .left {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  border-left: 3px solid #444;
-  border-right: 3px solid #444;
+  border-left: 3px solid $back-ground-mid;
+  border-right: 3px solid $back-ground-mid;
   left: 0;
   top: 50%;
   transform: translateY(-50%) translateX(-100%);
@@ -216,8 +194,8 @@
 .right {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  border-left: 3px solid #444;
-  border-right: 3px solid #444;
+  border-left: 3px solid $back-ground-mid;
+  border-right: 3px solid $back-ground-mid;
   right: 0;
   top: 50%;
   transform: translateY(-50%) translateX(100%);
@@ -227,8 +205,8 @@
 .down {
   border-left: 3px solid black;
   border-right: 3px solid black;
-  border-top: 3px solid #444;
-  border-bottom: 3px solid #444;
+  border-top: 3px solid $back-ground-mid;
+  border-bottom: 3px solid $back-ground-mid;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) translateY(100%);
@@ -238,6 +216,6 @@
 
 .hallway {
   position: absolute;
-  background-color: #444;
+  background-color: $back-ground-mid;
   z-index: 999;
 }

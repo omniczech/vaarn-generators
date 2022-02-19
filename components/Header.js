@@ -8,6 +8,7 @@ const Header = () => {
       <Link href="/characters">Characters</Link>
       <Link href="/region">Region</Link>
       <Link href="/assorted">Assorted Generators</Link>
+      <Link href="/the-infinity-vault">The Infinity Vault</Link>
     </header>
   );
 };

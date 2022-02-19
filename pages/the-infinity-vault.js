@@ -4,7 +4,7 @@ import classNames from "classnames";
 import ColonRoll from "../components/colonRoll";
 import infinityVault from "../data/infinity";
 import { randomFromArray } from "../data/utils";
-import styles from "../styles/Infinity.module.css";
+import styles from "../styles/Infinity.module.scss";
 
 const TheInfinityVault = () => {
   const exitString =
