@@ -149,7 +149,7 @@
 }
 .layer > p {
   position: absolute;
-  left: 0;
+  left: 10px;
 }
 
 .layer > div {
@@ -160,35 +160,84 @@
   padding: 0 1rem;
   background-color: #222;
   margin-left: 1rem;
-  min-width: 80px;
+  min-width: 90px;
+  position: relative;
 }
 .current {
   border: 3px solid #ddd;
-  padding: 0 1rem;
   background-color: rgb(56, 67, 56);
-  margin-left: 1rem;
-  min-width: 80px;
+}
+.visited {
+  background-color: #444;
 }
 .entrance {
   border: 3px solid rgb(172, 233, 151);
-  padding: 0 1rem;
   background-color: #666;
-  margin-left: 1rem;
-  min-width: 80px;
-}
-.visited {
-  border: 3px solid black;
-  padding: 0 1rem;
-  background-color: #444;
-  margin-left: 1rem;
-  min-width: 80px;
 }
 
 .controls {
   position: fixed;
-  top: 100px;
+  bottom: 100px;
   right: 20px;
   padding: 0 2rem;
   background-color: rgba(256, 256, 256, 0.2);
   text-align: center;
+}
+
+.controls button {
+  border-radius: 0;
+  outline: none;
+  border: 2px solid black;
+  background-color: #fff;
+}
+
+.up {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 3px solid #444;
+  border-bottom: 3px solid #444;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  width: 1rem;
+  height: calc(1rem + 6px);
+}
+.left {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid #444;
+  border-right: 3px solid #444;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  width: calc(1rem + 6px);
+  height: 1rem;
+}
+.right {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid #444;
+  border-right: 3px solid #444;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(100%);
+  width: calc(1rem + 6px);
+  height: 1rem;
+}
+.down {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 3px solid #444;
+  border-bottom: 3px solid #444;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  width: 1rem;
+  height: calc(1rem + 6px);
+}
+
+.hallway {
+  position: absolute;
+  background-color: #444;
+  z-index: 999;
 }
