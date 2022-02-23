@@ -1,6 +1,10 @@
 import Cors from "cors";
-import { camelize, randomFromArray, rollAllTables } from "../../../data/utils";
-import assortedTables from "../../../data/assorted";
+import {
+  camelize,
+  randomFromArray,
+  rollAllTables,
+} from "../../../../data/utils";
+import assortedTables from "../../../../data/assorted";
 function initMiddleware(middleware) {
   return (req, res) =>
     new Promise((resolve, reject) => {
@@ -26,24 +30,19 @@ export default async function handler(req, res) {
   const generatorName = camelize(
     "gnomon " + req.query.type.split("-").join(" ")
   );
+  console.log(generatorName);
   if (!generatorName in assortedTables) {
     res.status(400).json({ error: "Bad request" });
   } else {
+    const splitHash = req.query.hash.split("");
     const rolls = rollAllTables(assortedTables[generatorName]);
-    const hash = [];
+    const rollsFixed = assortedTables[generatorName].map((q, i) => {
+      return { rollName: q.name, value: q.options[parseInt(splitHash[i], 26)] };
+    });
     res.status(200).json({
-      data: rolls.map((roll) => {
-        const chosenIndex = assortedTables[generatorName]
-          .filter((q) => {
-            return q.name === roll.rollName;
-          })[0]
-          .options.indexOf(roll.value)
-          .toString(26);
-        hash.push(chosenIndex);
-
+      data: rollsFixed.map((roll) => {
         return roll;
       }),
-      hash: hash.join(""),
     });
   }
 }
