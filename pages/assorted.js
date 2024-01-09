@@ -24,6 +24,7 @@ const Assorted = () => {
   const generateEntries = (qty, gen) => {
     let i = 0;
     let holder = [];
+    console.log(camelize(gen));
     while (i < qty) {
       holder.push(rollAllTables(assortedTables[camelize(gen)]));
       i++;
@@ -85,7 +86,7 @@ const Assorted = () => {
             <option>Gnomon - Trade Cartels</option>
             <option>Gnomon - Urban Shrines</option>
             <option>Gnomon - Pit Fighters</option>
-            <option>Gnomon - Philosopher&apos; s guild</option>
+            <option>Gnomon - Philosophers guild</option>
             <option>Gnomon - Gang of Criminals</option>
             <option>Gnomon - Tavern</option>
           </select>
