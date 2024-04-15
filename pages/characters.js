@@ -88,7 +88,7 @@ const Characters = () => {
         <h1>캐릭터 생성기</h1>
         <button onClick={reroll}>새 시트 생성!</button>
         <label>
-          Select an Ancestry (--- will choose one at random):{" "}
+          기원을 고르십시오 (--- 는 무작위 기원입니다):{" "}
           <select onChange={(e) => setManualChosenAncestry(e.target.value)}>
             <option value="">---</option>
             <option value="캐클모 추방자">캐클모</option>
