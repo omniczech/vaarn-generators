@@ -1,8 +1,10 @@
-.container {
+.container {   background-color: #155352;   color: #b1c9c3;
+  background-color: #155352;
+  color: #b1c9c3;
   padding: 0 2rem;
 }
 
-.main {
+.main {   background-color: #155352;   color: #b1c9c3;
   padding: 2rem 0;
   max-width: 1000px;
   width: 80vw;
@@ -18,13 +20,13 @@
 .main p,
 .main label,
 .main button,
-.main select {
+.main select {   background-color: #155352;   color: #b1c9c3;
   font-family: "Anonymous Pro", sans-serif;
   letter-spacing: 1px;
   line-height: 1.4em;
 }
 
-.header {
+.header {   background-color: #155352;   color: #b1c9c3;
   display: flex;
   flex: 1;
   padding: 1rem 0;
@@ -32,10 +34,10 @@
   justify-content: center;
   align-items: center;
 }
-.header a {
+.header a {   background-color: #155352;   color: #b1c9c3;
   margin: 0 1rem;
 }
-.footer {
+.footer {   background-color: #155352;   color: #b1c9c3;
   display: flex;
   flex: 1;
   padding: 1rem 0;
@@ -44,7 +46,7 @@
   align-items: center;
 }
 
-.title a {
+.title a {   background-color: #155352;   color: #b1c9c3;
   color: #0070f3;
   text-decoration: underline;
 }
@@ -60,28 +62,28 @@
 .footer a:active,
 .header a:hover,
 .header a:focus,
-.header a:active {
+.header a:active {   background-color: #155352;   color: #b1c9c3;
   text-decoration: none;
 }
 
-.title {
+.title {   background-color: #155352;   color: #b1c9c3;
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
 }
 
 .title,
-.description {
+.description {   background-color: #155352;   color: #b1c9c3;
   text-align: center;
 }
 
-.description {
+.description {   background-color: #155352;   color: #b1c9c3;
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
-.code {
+.code {   background-color: #155352;   color: #b1c9c3;
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
@@ -90,7 +92,7 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+.grid {   background-color: #155352;   color: #b1c9c3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,47 +100,47 @@
   max-width: 800px;
 }
 
-.card h2 {
+.card h2 {   background-color: #155352;   color: #b1c9c3;
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
-.card p {
+.card p {   background-color: #155352;   color: #b1c9c3;
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-.logo {
+.logo {   background-color: #155352;   color: #b1c9c3;
   height: 1em;
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
+@media (max-width: 600px) {   background-color: #155352;   color: #b1c9c3;
+  .grid {   background-color: #155352;   color: #b1c9c3;
     width: 100%;
     flex-direction: column;
   }
 }
 
-.flex {
+.flex {   background-color: #155352;   color: #b1c9c3;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
 }
 
-.flex > div {
+.flex > div {   background-color: #155352;   color: #b1c9c3;
   width: 45%;
 }
 
-@media (max-width: 600px) {
-  .flex > div {
+@media (max-width: 600px) {   background-color: #155352;   color: #b1c9c3;
+  .flex > div {   background-color: #155352;   color: #b1c9c3;
     width: 100%;
   }
 }
 
-.card {
+.card {   background-color: #155352;   color: #b1c9c3;
   position: relative;
   margin: 1rem;
   flex: 1 0 45%;
@@ -147,7 +149,7 @@
 .card:before,
 .card:after,
 .card > :first-child:before,
-.card > :first-child:after {
+.card > :first-child:after {   background-color: #155352;   color: #b1c9c3;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -155,36 +157,36 @@
   border-style: solid; /* or whatever style */
   content: " ";
 }
-.card:before {
+.card:before {   background-color: #155352;   color: #b1c9c3;
   top: 0;
   left: 0;
   border-width: 2px 0 0 2px;
 }
-.card:after {
+.card:after {   background-color: #155352;   color: #b1c9c3;
   top: 0;
   right: 0;
   border-width: 2px 2px 0 0;
 }
-.card > :first-child:before {
+.card > :first-child:before {   background-color: #155352;   color: #b1c9c3;
   bottom: 0;
   right: 0;
   border-width: 0 2px 2px 0;
 }
-.card > :first-child:after {
+.card > :first-child:after {   background-color: #155352;   color: #b1c9c3;
   bottom: 0;
   left: 0;
   border-width: 0 0 2px 2px;
 }
 
-.card button {
+.card button {   background-color: #155352;   color: #b1c9c3;
   margin-right: 0.5rem;
 }
-.cardcontainer {
+.cardcontainer {   background-color: #155352;   color: #b1c9c3;
   display: flex;
   flex-wrap: wrap;
 }
 
-.card .divider-above {
+.card .divider-above {   background-color: #155352;   color: #b1c9c3;
   margin-top: 1.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid #444;
