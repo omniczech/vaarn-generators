@@ -185,7 +185,7 @@ const Characters = () => {
                 rollName="신비로운 재능"
                 value={
                   mysticGift[1].value +  
-                  "재능을 얻습니다." +
+                  " 재능을 얻습니다." +
                   "힘의 원천: " +
                   mysticGift[0].value
                 }
