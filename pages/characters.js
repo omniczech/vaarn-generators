@@ -134,7 +134,7 @@ const Characters = () => {
             <p> {chosenAncestry.description}</p>
           </div>
           <div>
-            <h3>Special Abilities</h3>
+            <h3>특이사항</h3>
             {chosenAncestry.special &&
               chosenAncestry.special.map((special) => {
                 return <p key={special}>{special}</p>;
@@ -175,7 +175,7 @@ const Characters = () => {
               <ColonRoll rollName="엑소티카" value={exotica[0].value} />
             )}
             <p>
-              <em>Choose one of the two below</em>
+              <em>아래 둘 중 하나를 고릅니다.</em>
             </p>
             {mysticGift.length && (
               <ColonRoll
