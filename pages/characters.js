@@ -112,6 +112,9 @@ const Characters = () => {
                 <p key={ability}>
                   <b>{ability}</b>: +{stats[i]} <b>방어도:</b> {stats[i] + 10}
                 </p>
+                 <p>
+                  <b>체력</b>(1d8 + 건강): {Math.floor(Math.random() * 8)} + {stats[2]}
+                </p>
               );
             })}
           </div>
@@ -143,7 +146,7 @@ const Characters = () => {
         </div>
         <div className={styles.flex}>
           <div>
-            <h3>Starting Equipment</h3>
+            <h3>시작 장비</h3>
             {weapon.length && (
               <ColonRoll
                 rollName="무기"
@@ -170,7 +173,7 @@ const Characters = () => {
             )}
           </div>
           <div>
-            <h3>Extra Gifts</h3>
+            <h3>추가 재능</h3>
             {exotica.length && (
               <ColonRoll rollName="엑소티카" value={exotica[0].value} />
             )}
@@ -180,10 +183,10 @@ const Characters = () => {
             {mysticGift.length && (
               <ColonRoll
                 rollName="신비로운 재능"
-                value={
-                  "You have the gift of " +
-                  mysticGift[1].value +
-                  ". You gained this power " +
+                value={ +
+                  mysticGift[1].value +  
+                  "재능을 얻습니다." +
+                  "힘의 원천: " +
                   mysticGift[0].value
                 }
               />
