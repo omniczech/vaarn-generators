@@ -112,10 +112,10 @@ const Characters = () => {
                 <p key={ability}>
                   <b>{ability}</b>: +{stats[i]} <b>방어도:</b> {stats[i] + 10}
                 </p>
+               );
                  <p>
                   <b>체력</b>(1d8 + 건강): {Math.floor(Math.random() * 8)} + {stats[2]}
                 </p>
-              );
             })}
           </div>
           <div>
