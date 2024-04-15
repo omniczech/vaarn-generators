@@ -1,9 +1,9 @@
 {
   "name": "파아 유목민",
-  "description": "Believed by some to be the children of Vaa, the Blue Goddess of Empty Spaces. The Faa are known throughout Vaarn for their resourcefullness, their ability to survive without drinking water, and the blue colour of their skin, which can vary from deep indigo to blaring cyan. The Faa usually travel in family groups or larger clans, but others are solitary, seeking danger or enlightenment in the furthest corners of the desert.",
+  "description": "일부 사람들은 파아를 빈 공간의 푸른 여신인 바아의 자식으로 생각합니다. 파아는 바안 전역에서 그들의 자원 활용 능력, 마시는 물 없이도 생존하는 능력, 그리고 깊은 남색에서부터 선명한 청색까지 다양한 피부 색상으로 유명합니다.파아는 보통 가족 단위나 더 큰 부족 단위로 이동하지만, 일부는 외롭게 사막의 가장 극단적인 구석에서 위험을 찾거나 깨달음을 얻습니다.",
   "special": [
-    "Desert Metabolism - Your body is adapted to long periods without water. You can recycle the moisture from your own sweat and urine. You become Deprived from thirst after three days without drinking, and it will be three weeks before you die.",
-    "Worm Wise - You have an affinity with Vaarn's sandworms. The Referee will always answer truthfully when you ask a question about these creatures. All reaction rolls when you engage with Vaarnish sandworms are made with Advantage."
+    "사막형 신체대사 - 당신의 몸은 물 없이 오랫동안 버틸 수 있도록 적응되어 있습니다. 자신의 땀과 소변에서 수분을 재활용할 수 있습니다. 당신은 마실 것 없이 세 일이 지나면 갈증으로 인해 고통받게 되며, 죽기 전까지는 3 주가 걸립니다.",
+    "벌레 친화력 - 당신은 바안의 모래벌레와 친화력을 가지고 있습니다. 심판은 당신이 이 생물에 대한 질문을 할 때 항상 진실하게 대답할 것입니다. 바안의 모래벌레와 상호 작용할 때 모든 반응 굴림은 유리점으로 이루어집니다."
   ],
   "rolls": [
     {
