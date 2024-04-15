@@ -110,7 +110,7 @@ const Characters = () => {
             {abilities.map((ability, i) => {
               return (
                 <p key={ability}>
-                  <b>{ability}</b>: +{stats[i]} <b>Defense:</b> {stats[i] + 10}
+                  <b>{ability}</b>: +{stats[i]} <b>방어도:</b> {stats[i] + 10}
                 </p>
               );
             })}
