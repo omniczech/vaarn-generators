@@ -24,12 +24,12 @@ const generateAbility = () => {
 };
 
 const abilities = [
-  "Strength",
-  "Dexterity",
-  "Constitution",
-  "Intellect",
-  "Psyche",
-  "Ego",
+  "힘",
+  "민첩",
+  "건강",
+  "지능",
+  "정신",
+  "자아",
 ];
 
 const Characters = () => {
@@ -85,27 +85,27 @@ const Characters = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>Character Generator</h1>
-        <button onClick={reroll}>Roll a new one!</button>
+        <h1>캐릭터 생성기</h1>
+        <button onClick={reroll}>새 시트 생성!</button>
         <label>
           Select an Ancestry (--- will choose one at random):{" "}
           <select onChange={(e) => setManualChosenAncestry(e.target.value)}>
             <option value="">---</option>
-            <option value="Cacklemaw Exile">Cacklemaw Exile</option>
-            <option value="Cacogen">Cacogen</option>
-            <option value="Faa Nomad">Faa Nomad</option>
-            <option value="Lithling">Lithling</option>
-            <option value="Mycomorph">Mycomorph</option>
-            <option value="Newbeast">Newbeast</option>
-            <option value="Planeyfolk">Planeyfolk</option>
-            <option value="Synth">Synth</option>
-            <option value="True-Kin">True-Kin</option>
+            <option value="캐클모 추방자">캐클모</option>
+            <option value="캐커젠">캐커젠</option>
+            <option value="파아 유목민">파아</option>
+            <option value="리슬링">리슬링</option>
+            <option value="버섯체">버섯체</option>
+            <option value="뉴비스트">뉴비스트</option>
+            <option value="플래니포크">플래니</option>
+            <option value="신스">신스</option>
+            <option value="트루킨">트루킨</option>
           </select>
         </label>
         <div className={styles.flex}>
           <div>
             <p>
-              <b>Ancestry:</b> {chosenAncestry.name}
+              <b>기원:</b> {chosenAncestry.name}
             </p>
             {abilities.map((ability, i) => {
               return (
@@ -130,7 +130,7 @@ const Characters = () => {
         </div>
         <div className={styles.flex}>
           <div>
-            <h3>Ancestry Description</h3>
+            <h3>기원 설명</h3>
             <p> {chosenAncestry.description}</p>
           </div>
           <div>
@@ -146,7 +146,7 @@ const Characters = () => {
             <h3>Starting Equipment</h3>
             {weapon.length && (
               <ColonRoll
-                rollName="Weapon"
+                rollName="무기"
                 value={
                   weapon[0].value +
                   " " +
@@ -158,13 +158,13 @@ const Characters = () => {
             )}
             {armor.length && (
               <ColonRoll
-                rollName="Armor"
+                rollName="방어구"
                 value={armor[0].value + ", " + armor[1].value}
               />
             )}
             {gear.length && (
               <ColonRoll
-                rollName="Gear"
+                rollName="도구"
                 value={gear[0].value + ", " + gear[1].value}
               />
             )}
@@ -172,14 +172,14 @@ const Characters = () => {
           <div>
             <h3>Extra Gifts</h3>
             {exotica.length && (
-              <ColonRoll rollName="Exotica" value={exotica[0].value} />
+              <ColonRoll rollName="엑소티카" value={exotica[0].value} />
             )}
             <p>
               <em>Choose one of the two below</em>
             </p>
             {mysticGift.length && (
               <ColonRoll
-                rollName="Mystical Gift"
+                rollName="신비로운 재능"
                 value={
                   "You have the gift of " +
                   mysticGift[1].value +
@@ -190,7 +190,7 @@ const Characters = () => {
             )}
             {cybernetic.length && (
               <ColonRoll
-                rollName="Cybernetic"
+                rollName="사이버네틱"
                 value={
                   cybernetic[0].value[0] +
                   " - " +
