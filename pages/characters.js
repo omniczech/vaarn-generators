@@ -175,7 +175,7 @@ const Characters = () => {
           <div>
             <h3>추가 재능</h3>
             {exotica.length && (
-              <ColonRoll rollName="엑소티카" value={exotica[0].value} />
+              <ColonRoll rollName="엑조티카" value={exotica[0].value} />
             )}
             <p>
               <em>아래 둘 중 하나를 고릅니다.</em>
