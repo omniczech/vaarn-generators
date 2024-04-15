@@ -1,62 +1,62 @@
 {
   "name": "캐커젠",
-  "description": "Cacogen are the mutated descendants of those unfortunates who were left to weather the Great Collapse upon the ruined surface of Urth. Necessity is the mother of invention and so, warped by radiation and preyed upon by biotech monstrosities and crazed thinking machines, the cacogen evolved into a million different forms. Each individual is genetically unique, gifted in surprising and disturbing ways. Cacogen outnumber true-kin by ten to one, and believe they are the true inheritors of Urth.",
+  "description": "캐커젠은 대붕괴 이후 우르스의 폐허 표면에서 남겨진 불운한 자들의 돌연변이 후손입니다. 필요는 발명의 어머니이며, 방사선에 의해 왜곡되고 생체 기술 괴물과 미친 사고 기계에게 노예로 삼기 때문에 캐커젠은 수백만 가지 다른 형태로 진화했습니다. 각 개인은 유전적으로 독특하며, 놀랍고 불안스러운 방식으로 재능을 가지고 있습니다. 캐커젠은 트루킨보다 10배 많으며, 그들은 우르스의 진정한 상속자라고 믿습니다.",
   "special": [
-    "Corrupted Blood - You must roll for mutations during character creation. You will find d100 mutations on the following spread.It is suggested that you roll no more than three times for mutations. In general, mutations do not have hard mechanical rules attached to them. It is suggested that you negotiate with the referee what these mutations mean in play. They are likely to grant you Advantage on saves in some situations, and Disadvantage on saves in other circumstances."
+    "오염된 핏줄 - 캐릭터 생성 중 돌연변이를 굴려야 합니다. 다음에 나열된 d100 돌연변이를 참고하세요. 돌연변이는 최대 세 번까지 굴리는 것을 권합니다. 일반적으로, 돌연변이에는 엄격한 기계적인 규칙이 부여되지 않습니다. 플레이 중에 이러한 돌연변이가 어떤 의미를 가지는지 심판과 협상하는 것을 제안합니다. 특정 상황에서 내성굴림 (save) 시에 유리점(Advantage)를 부여하거나 다른 상황에서 내성굴림 (save) 시에 불리점(Disadvantage)를 줄 수 있습니다."
   ],
   "rolls": [
     {
-      "name": "Name",
+      "name": "이름",
       "options": [
-        "Arda",
-        "Bollo",
-        "Breen",
-        "Conch",
-        "Crab",
-        "Dancer",
-        "Doss",
-        "Hust",
-        "Jal",
-        "Lask",
-        "Lip",
-        "Olm",
-        "Pirrip",
-        "Poucher",
-        "Pree",
-        "Uz",
-        "Whistler",
-        "Yaz",
-        "Yoss",
-        "Zem"
+        "아르다",
+        "볼로",
+        "브린",
+        "콘치",
+        "크랩",
+        "댄서",
+        "도스",
+        "허스트",
+        "잘",
+        "라스크",
+        "립",
+        "옴",
+        "피립",
+        "파우처",
+        "프리이",
+        "우즈",
+        "위슬러",
+        "야즈",
+        "요스",
+        "젬"
       ]
     },
     {
-      "name": "Demeanor",
+      "name": "태도",
       "options": [
-        "Abrasive",
-        "Arrogant",
-        "Assertive",
-        "Charismatic",
-        "Daring",
-        "Decadent",
-        "Eloquent",
-        "Extravagant",
-        "Hedonistic",
-        "Impulsive",
-        "Irritable",
-        "Melancholy",
-        "Paranoid",
-        "Quiet",
-        "Religious",
-        "Romantic",
-        "Scholarly",
-        "Stern",
-        "Vain",
-        "Volatile"
+        "거침",
+        "오만함",
+        "적극적임",
+        "카리스마 있음",
+        "대담함",
+        "퇴폐적",
+        "유창함",
+        "사치스러움",
+        "쾌락주의적",
+        "충동적",
+        "짜증남",
+        "우울함",
+        "편집증적",
+        "조용함",
+        "종교적",
+        "낭만적",
+        "학문적",
+        "근엄함",
+        "자만심 강함",
+        "변덕스러움"
       ]
     },
     {
-      "name": "Misfortune",
+      "name": "불운",
       "options": [
         "Slave",
         "Debtor",
@@ -204,6 +204,14 @@
         "Armiger's Clothing",
         "Exultant's Clothing",
         "Expensive Clothing"
+      ]
+    },
+    {
+      "name":"돌연변이"
+      "options": [
+      "산성 혈액 - 혈액이 부식성입니다.",
+      "접착접촉 - 손과 발이 수직 표면에 달라붙습니다.",
+      "알비노 - 몸에 색소가 없습니다.",
       ]
     }
   ]
