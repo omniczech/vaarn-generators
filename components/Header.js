@@ -4,11 +4,11 @@ import styles from "../styles/Home.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Link href="/">Home</Link>
-      <Link href="/characters">Characters</Link>
-      <Link href="/region">Region</Link>
-      <Link href="/vaults">Vaults</Link>
-      <Link href="/assorted">Assorted Generators</Link>
+      <Link href="/">홈</Link>
+      <Link href="/characters">캐릭터</Link>
+      <Link href="/region">지역</Link>
+      <Link href="/vaults">볼트</Link>
+      <Link href="/assorted">여러 종류의 생성기</Link>
     </header>
   );
 };
