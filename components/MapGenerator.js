@@ -72,7 +72,7 @@ const MapGenerator = ({ nodesInput, refresh }) => {
         return {
           from: node[0],
           to: node[1],
-          label: distance + " days",
+          label: distance + " 일",
         };
       })
     );
