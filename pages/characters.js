@@ -113,10 +113,10 @@ const Characters = () => {
                   <b>{ability}</b>: +{stats[i]} <b>방어도:</b> {stats[i] + 10}
                 </p>
                );
+            })}
                  <p>
                   <b>체력</b>(1d8 + 건강): {Math.floor(Math.random() * 8)} + {stats[2]}
                 </p>
-            })}
           </div>
           <div>
             {rollTables &&
@@ -183,7 +183,7 @@ const Characters = () => {
             {mysticGift.length && (
               <ColonRoll
                 rollName="신비로운 재능"
-                value={ +
+                value={
                   mysticGift[1].value +  
                   "재능을 얻습니다." +
                   "힘의 원천: " +
