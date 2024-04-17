@@ -36,7 +36,7 @@ const Region = () => {
       <main className={styles.main}>
         <h1>지역</h1>
         <label>
-          지역의 갯수{" "}
+          장소의 갯수{" "}
           <input
             type="number"
             min={4}
