@@ -34,7 +34,7 @@ const Region = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>Region</h1>
+        <h1>지역</h1>
         <label>
           Number of locations{" "}
           <input
@@ -47,17 +47,17 @@ const Region = () => {
         </label>
         <p>
           <button onClick={roll}>
-            Roll another Region (Regenerates all content)
+            Roll another Region (Regenerates all content) 또다른 지역 생성하기 (모든 내용이 재생성됩니다)
           </button>
         </p>
         <p>
-          <b>Landscape:</b> {landscape}
+          <b>지형:</b> {landscape}
         </p>
         <p>
-          <b>The region was named after:</b> {namesake}
+          <b>지명의 유래:</b> {namesake}
         </p>
         <p>
-          <b>Story Seed:</b> {storySeed}
+          <b>스토리 시드:</b> {storySeed}
         </p>
         {/* <p>Choose a dice size for each location (Larger is has more variety)</p> */}
         <MapGenerator nodesInput={locationCount} refresh={refresh} />
