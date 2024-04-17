@@ -115,7 +115,7 @@ const Characters = () => {
                );
             })}
                  <p>
-                  <b>체력</b>(1d8 + 건강): {Math.floor(Math.random() * 8)} + {stats[2]}
+                  <b>체력</b>(1d8 + 건강): {Math.floor(Math.random() * (8 - 1 + 1) + 1)} + {stats[2]}
                 </p>
           </div>
           <div>
