@@ -1,4 +1,4 @@
-const anomaly = [
+const 이상현상 = [
   {
     name: "",
     options: [
@@ -100,4 +100,4 @@ const anomaly = [
     ],
   },
 ];
-export default anomaly;
+export default 이상현상;
