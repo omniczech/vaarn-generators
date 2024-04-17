@@ -36,7 +36,7 @@ const Region = () => {
       <main className={styles.main}>
         <h1>지역</h1>
         <label>
-          Number of locations{" "}
+          지역의 갯수{" "}
           <input
             type="number"
             min={4}
@@ -47,7 +47,7 @@ const Region = () => {
         </label>
         <p>
           <button onClick={roll}>
-            Roll another Region (Regenerates all content) 또다른 지역 생성하기 (모든 내용이 재생성됩니다)
+            또다른 지역 생성하기 (모든 내용이 재생성됩니다)
           </button>
         </p>
         <p>
