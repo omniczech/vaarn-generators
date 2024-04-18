@@ -1,4 +1,4 @@
-const Anomaly = [
+const anomaly = [
   {
     name: "",
     options: [
@@ -100,4 +100,4 @@ const Anomaly = [
     ],
   },
 ];
-export default Anomaly;
+export default anomaly;
