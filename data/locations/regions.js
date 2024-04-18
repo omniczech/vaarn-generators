@@ -53,8 +53,8 @@ const regions = {
     "something No Longer Understood",
   ],
   locationType: [
-    "Ruins:" "폐허",
-    "settlement": "정착지",
+    "폐허",
+    "정착지",
     "오아시스",
     "성지",
     "난파된 차량",
