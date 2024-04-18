@@ -38,7 +38,7 @@ const regions = {
     "선인장 지대",
     "동굴로 가득함",
     "쓰레기 매립지",
-    "바람이 통하는 협곡"
+    "바람이 통하는 협곡",
   ],
   namesake: [
     "a Famous Resident",
@@ -71,7 +71,7 @@ const regions = {
     "신정부 야영지",
     "파아 유목민 야영지",
     "캐클모 둥지",
-    "이상현상"
+    "이상현상",
   ],
   hazards: [
     "Bandits Control the Road",
