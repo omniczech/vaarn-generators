@@ -22,14 +22,14 @@ const Region = () => {
     setNamesake(randomFromArray(regions.namesake));
     setStorySeed(
       randomFromArray(regions.genericStorySeeds.npcA) +
-        "" + 
+        " " + 
         randomFromArray(regions.genericStorySeeds.npcB) +
-        "" +
+        " " +
         randomFromArray(regions.genericStorySeeds.wants) +
         "원함"+        
         ". 한편, " +
         randomFromArray(regions.genericStorySeeds.complication) +
-        "라는 문제가 있음" 
+        "라는 문제가 더 있음" 
     );
     setRefresh(refresh + 1);
   };
