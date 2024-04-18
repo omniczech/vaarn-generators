@@ -44,8 +44,8 @@ const Location = ({ number, refresh }) => {
             ))}
           </p>
           <div>
-            <button onClick={refresher}>Reroll details</button>
-            <button onClick={roll}>Reroll location</button>
+            <button onClick={refresher}>세부사항 재굴림</button>
+            <button onClick={roll}>장소 재굴림</button>
           </div>
         </>
       )}
