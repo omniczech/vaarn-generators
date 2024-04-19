@@ -40,7 +40,7 @@ const archive = [
     ],
   },
   {
-    name: " 관리하는 ",
+    name: " 관리하고 있으며 ",
     options: [
       "먼지투성이",
       "무너져가는",
