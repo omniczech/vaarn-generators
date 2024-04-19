@@ -99,6 +99,7 @@ const arcology = [
   },
 {
     name: "(이)가 부족하다.",
+options: [],
   },
 ];
 export default arcology;
