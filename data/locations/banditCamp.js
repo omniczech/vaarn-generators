@@ -2,7 +2,7 @@ import { sourceOfConflict } from "../shared";
 
 const banditCamp = [
   {
-    name: "The bandits are",
+    name: "도적떼들은 ",
     options: [
       "Ex-Gladiators",
       "Sly Mycomorphs",
@@ -27,7 +27,7 @@ const banditCamp = [
     ],
   },
   {
-    name: " lead by",
+    name: "이며 이들의 지도자는",
     options: [
       "an Injured Gladiator",
       "Small but Intense leader",
@@ -52,7 +52,7 @@ const banditCamp = [
     ],
   },
   {
-    name: " who use",
+    name: "를 무기로 사용하는 ",
     options: [
       "Martial Arts",
       "Bite and Scream",
@@ -77,7 +77,7 @@ const banditCamp = [
     ],
   },
   {
-    name: " as weapons and want",
+    name: "이고 ",
     options: [
       "Water",
       "Food",
@@ -102,7 +102,7 @@ const banditCamp = [
     ],
   },
   {
-    name: ". Currently",
+    name: "를 원한다. 현재는",
     options: [
       "the Bandit Leader",
       "the Leader’s Trusted Underling",
@@ -115,9 +115,13 @@ const banditCamp = [
       "a Very Young Bandit",
       "an Ancient, Decrepit Bandit",
     ],
+  }, 
+ {
+    name: "(이)가 ",
+    options: sourceOfConflict,
   },
   {
-    name: " is in conflict with",
+    name: "(으)로 인해",
     options: [
       "a Rival to Leader’s Authority",
       "a Talkative, Annoying Bandit",
@@ -131,9 +135,11 @@ const banditCamp = [
       "a Wealthy Prisoner, Kept for Ransom",
     ],
   },
-  {
-    name: " and the source of the conflict is",
-    options: sourceOfConflict,
+ {
+    name: "(와)과 갈등한다.",
+    options: [
+],
   },
+
 ];
 export default banditCamp;
