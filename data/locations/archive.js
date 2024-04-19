@@ -92,6 +92,8 @@ const archive = [
   },
   {
   name: "(을)를 보관한다",
+  options: [""
+],
   },
 ];
 export default archive;
