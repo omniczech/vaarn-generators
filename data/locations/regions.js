@@ -170,7 +170,7 @@ const regions = {
   "아콜로지": arcology,
   "도적_야영지": banditCamp,
   "현상금_사냥꾼_야영지": bountyHuntersCamp,
-  "캐클모-둥지": cacklemawDen,
+  "캐클모_둥지": cacklemawDen,
   "파아_유목민_야영지": faaNomadCamp,
   "무덤가": grave,
   "신정부_야영지": hegemonyCamp,
