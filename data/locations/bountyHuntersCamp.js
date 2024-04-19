@@ -75,7 +75,7 @@ const bountyHuntersCamp = [
     ],
   },
   {
-    name: " 사냥하며 ",
+    name: " 사냥하고 ",
     options: [
       "사냥감에 대한 단서를",
       "위험한 사냥감을 죽이기를",
