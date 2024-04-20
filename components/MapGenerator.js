@@ -127,7 +127,7 @@ const MapGenerator = ({ nodesInput, refresh }) => {
   return (
     <div className={styles["map-container"]}>
       <div className={styles.map} ref={visJsRef} />
-      <button onClick={localRefresher}>Regenerate map</button>
+      <button onClick={localRefresher}>맵 재생성</button>
     </div>
   );
 };
