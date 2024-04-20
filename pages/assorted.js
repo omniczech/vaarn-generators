@@ -73,7 +73,7 @@ const Assorted = () => {
           생성할 것을 골라주십시오:{" "}
           <select onChange={selectGenerator} defaultValue="">
             <option value="">---</option>
-            <option>NPC_즉석_생성기</option>
+            <option>_NPC_즉석_생성기</option>
             <option>바안의_도서</option>
             <option>바안의_약물</option>
             <option>바안의_하찮은_신들</option>

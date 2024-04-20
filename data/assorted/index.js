@@ -16,7 +16,7 @@ import tradeCartels from "./tradeCartels";
 import urbanShrines from "./urbanShrines";
 
 const assortedTables = {
-  "NPC_즉석_생성기": NPC,
+  "_NPC_즉석_생성기": NPC,
   "바안의_도서": books,
   "바안의_약물": drugs,
   "바안의_하찮은_신들": gods,
