@@ -30,7 +30,7 @@ const assortedTables = {
   "노몬의_도심_성소": urbanShrines,
   "노몬의_투기장_투사들": pitFighters,
   "노몬의_철학자_길드": philosophers,
-  "노몬의 범죄자_무리": gang,
+  "노몬의_범죄자_무리": gang,
   "노몬의_주점": tavern,
 };
 
