@@ -1,6 +1,7 @@
 const hegemonyCamp = [
   {
-    name: "야영지는 ", [
+    name: "야영지는 ",
+      options: [
       "탈영병 무리가 (d6)",
       "탈영병 무리가 (d6)",
       "정찰병 무리가 (d6)",
