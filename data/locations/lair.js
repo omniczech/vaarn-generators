@@ -4,7 +4,7 @@ const lair = [
     options: [
       "은빛 양치기가 머무는 폐허가 된 성당. 위험의 징조로 은빛 후광을 낀 미친 사람들이 파티에게 돌아가라고 애원한다.",
       "햇볕이 드는 평평한 평원에 머무르는 크롬 깃털 돛단뱀. 위험의 징조로 바람을 타고 크롬 깃털이 흩날린다.",
-      "A Burrows in Earth inhabited by d6 Quill-Spiders. There is a warning in the form of An Antelope, Limping, Leg Full of Quills",
+      "땅굴에 머무르는 d6 가시거미. 위험의 징조로 다리에 가시가 잔뜩 박힌 채 절뚝이는 영양이 보인다.",
       "A Colourless Cactus Grove inhabited by a Chromavore. There is a warning in the form of Colourless Husks of Faa Family",
       "A Gruesome Black Hive inhabited by d6 Hiveymen. There is a warning in the form of Single Sable Bee Crawls on Ground",
       "A Sun-kissed Basking Rock inhabited by d6 Lizard Lions. There is a warning in the form of Discover a Shed Skin",
