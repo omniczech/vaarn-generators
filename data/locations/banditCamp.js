@@ -121,7 +121,7 @@ const banditCamp = [
     options: sourceOfConflict,
   },
   {
-    name: " 인해",
+    name: "(으)로 인해",
     options: [
       "지도자의 권위에 대한 경쟁자와",
       "수다쟁이인대다 짜증나는 도적과",
