@@ -1,4 +1,4 @@
-ㅈimport { sourceOfConflict } from "../shared";
+import { sourceOfConflict } from "../shared";
 
 const faaNomadCamp = [
   {
