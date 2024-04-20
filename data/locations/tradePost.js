@@ -146,7 +146,7 @@ const tradePost = [
     options: sourceOfConflict,
   },
   {
-    name:  " 인해 ",
+    name:  "(으)로 인해 ",
     options: [
       "성공했으며 잘난채하는 장사꾼과",
       "교활하고 계획적인 장사꾼과",
