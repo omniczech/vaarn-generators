@@ -2,8 +2,8 @@ const lair = [
   {
     name: "",
     options: [
-      "A Ruined Chapel inhabited by an Argent Shepherd. There is a warning in the form of Madmen Affixed With Argent Halos Beg Party To Turn Back",
-      "A Flat Basking Plain inhabited by a Chrome-Feathered Sailback. There is a warning in the form of Chrome Feathers Float on the Wind",
+      "은빛 양치기가 머무는 폐허가 된 성당. 위험의 징조로 은빛 후광을 낀 미친 사람들이 파티에게 돌아가라고 애원한다.",
+      "햇볕이 드는 평평한 평원에 머무르는 크롬 깃털 돛단뱀. 위험의 징조로 바람을 타고 크롬 깃털이 흩날린다.",
       "A Burrows in Earth inhabited by d6 Quill-Spiders. There is a warning in the form of An Antelope, Limping, Leg Full of Quills",
       "A Colourless Cactus Grove inhabited by a Chromavore. There is a warning in the form of Colourless Husks of Faa Family",
       "A Gruesome Black Hive inhabited by d6 Hiveymen. There is a warning in the form of Single Sable Bee Crawls on Ground",
