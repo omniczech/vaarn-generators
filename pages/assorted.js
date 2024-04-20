@@ -47,7 +47,7 @@ const Assorted = () => {
                       <>
                         {attr.rollName === "NPC A" && (
                           <p className={styles["divider-above"]}>
-                            <b>Conflict</b>
+                            <b>갈등</b>
                           </p>
                         )}
                         <ColonRoll
@@ -68,32 +68,32 @@ const Assorted = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>Assorted generators</h1>
+        <h1>여러가지 생성기</h1>
         <label>
-          Choose an object to generate:{" "}
+          생성할 것을 골라주십시오:{" "}
           <select onChange={selectGenerator} defaultValue="">
             <option value="">---</option>
-            <option>Quick NPC Generator</option>
-            <option>Books of Vaarn</option>
-            <option>Drugs of Vaarn</option>
-            <option>Petty Gods of Vaarn</option>
-            <option>Trade Caravan</option>
-            <option>You Found a Corpse</option>
-            <option>Fine Dining</option>
-            <option>Gnomon - City Buildings</option>
-            <option>Gnomon - City Merchants</option>
-            <option>Gnomon - Noble Houses</option>
-            <option>Gnomon - Trade Cartels</option>
-            <option>Gnomon - Urban Shrines</option>
-            <option>Gnomon - Pit Fighters</option>
-            <option>Gnomon - Philosophers guild</option>
-            <option>Gnomon - Gang of Criminals</option>
-            <option>Gnomon - Tavern</option>
+            <option>NPC_즉석_생성기</option>
+            <option>바안의_도서</option>
+            <option>바안의_약물</option>
+            <option>바안의_하찮은_신들</option>
+            <option>행상단</option>
+            <option>발견한_시체</option>
+            <option>한_끼_식사</option>
+            <option>노몬의_건물</option>
+            <option>노몬의_상인</option>
+            <option>노몬의_귀족_가문</option>
+            <option>노몬의_상인_카르텔</option>
+            <option>노몬의_도심_성소</option>
+            <option>노몬의_투기장_투사들</option>
+            <option>노몬의_철학자_길드</option>
+            <option>노몬의_범죄자_무리</option>
+            <option>노몬의_주점</option>
           </select>
         </label>
         <p>
           <label>
-            How many to generate
+            생성 갯수
             <input
               type="number"
               min={1}
@@ -108,7 +108,7 @@ const Assorted = () => {
               setRefresher(refresher + 1);
             }}
           >
-            Regenerate
+            재생성
           </button>
         </p>
         {content}
