@@ -170,7 +170,7 @@ const settlement = [
     options: sourceOfConflict,
   },
   {
-    name: " 인해 ",
+    name: "(으)로 인해 ",
     options: [
       "바보처럼 여겨지는 거주민과",
       "바보인 척 하는 거주민과",
