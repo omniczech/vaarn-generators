@@ -1,4 +1,4 @@
-import { sourceOfConflict } from "../shared";
+ㅈimport { sourceOfConflict } from "../shared";
 
 const faaNomadCamp = [
   {
@@ -121,7 +121,7 @@ const faaNomadCamp = [
     options: sourceOfConflict,
   },
   {
-    name: " 인해 ",
+    name: "(으)로 인해 ",
     options: [
       "지도자 권위에 대한 경쟁자와",
       "지도자에 대한 경쟁자의 배우자와",
