@@ -24,7 +24,7 @@ const Region = () => {
       randomFromArray(regions.genericStorySeeds.npcA) +
         " " + 
         randomFromArray(regions.genericStorySeeds.npcB) +
-        " " +
+        "" +
         randomFromArray(regions.genericStorySeeds.wants) +
         " 원함"+        
         ". 한편, " +

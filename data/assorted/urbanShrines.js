@@ -176,7 +176,7 @@ const urbanShrines = [
       "Slave, Who Sweeps the Grounds",
     ],
   },
-  { name: "Source of Conflict", options: sourceOfConflict },
+  { name: "갈등의 원인", options: sourceOfConflict },
   {
     name: "NPC B",
     options: [
