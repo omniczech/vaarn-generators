@@ -176,7 +176,7 @@ const gang = [
       "날카로운 눈매의 망보기꾼",
     ],
   },
-  { name: "Source of Conflict", options: sourceOfConflict },
+  { name: "갈등의 원인", options: sourceOfConflict },
   {
     name: "NPC B",
     options: [
