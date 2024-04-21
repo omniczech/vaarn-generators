@@ -79,7 +79,7 @@ const Assorted = () => {
             <option>바안의_하찮은_신들</option>
             <option>행상단</option>
             <option>발견한_시체</option>
-            <option>한_끼_식사</option>
+            <option>고급_식사</option>
             <option>노몬의_건물</option>
             <option>노몬의_상인</option>
             <option>노몬의_귀족_가문</option>

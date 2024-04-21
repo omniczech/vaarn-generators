@@ -22,7 +22,7 @@ const assortedTables = {
   "바안의_하찮은_신들": gods,
   "행상단": tradeCaravan,
   "발견한_시체": corpse,
-  "한_끼_식사": fineDining,
+  "고급_식사": fineDining,
   "노몬의_건물": buildings,
   "노몬의_상인": merchants,
   "노몬의_귀족_가문": nobleHouse,
