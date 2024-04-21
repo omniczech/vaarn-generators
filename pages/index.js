@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>Vaults of Vaarn용 생성기</h1>
 
         <p className={styles.description}>
-          푸른 사막과 버려진 페허를 탐험하는 Vaults of Vaarn는 레온 헌트가 만든 개쩌는 RPG 입니다. 아래 캐릭터 생성기로 빠르게 캐릭터 메이킹을 해보세요.
+          푸른 사막과 버려진 페허를 탐험하는 Vaults of Vaarn는 레온 헌트가 만든 포스트 아포칼립스 RPG 입니다. 아래 캐릭터 생성기로 빠르게 캐릭터 메이킹을 해보세요.
         </p>
         <Link href="/characters">캐릭터 생성</Link>
       </main>
