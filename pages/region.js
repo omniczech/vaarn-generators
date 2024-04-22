@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
 import styles from "../styles/Home.module.css";
 import locationStyles from "../components/Location.module.css";
 import Location from "../components/Location";
@@ -31,12 +32,13 @@ const Region = () => {
     );
     setRefresh(refresh + 1);
   };
+  const { t } = useTranslation("common");
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>Region</h1>
+        <h1>{t("Region")}</h1>
         <label>
-          Number of locations{" "}
+          {t("Number of locations")}{" "}
           <input
             type="number"
             min={4}
@@ -47,17 +49,17 @@ const Region = () => {
         </label>
         <p>
           <button onClick={roll}>
-            Roll another Region (Regenerates all content)
+            {t("Roll another Region (Regenerates all content)")}
           </button>
         </p>
         <p>
-          <b>Landscape:</b> {landscape}
+          <b>{t("Landscape")}:</b> {landscape}
         </p>
         <p>
-          <b>The region was named after:</b> {namesake}
+          <b>{t("The region was named after")}:</b> {namesake}
         </p>
         <p>
-          <b>Story Seed:</b> {storySeed}
+          <b>{t("Story Seed")}:</b> {storySeed}
         </p>
         {/* <p>Choose a dice size for each location (Larger is has more variety)</p> */}
         <MapGenerator nodesInput={locationCount} refresh={refresh} />

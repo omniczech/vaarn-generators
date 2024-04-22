@@ -15,23 +15,26 @@ import tradeCaravan from "./tradeCaravan";
 import tradeCartels from "./tradeCartels";
 import urbanShrines from "./urbanShrines";
 
-const assortedTables = {
-  quickNPCGenerator: NPC,
-  booksOfVaarn: books,
-  drugsOfVaarn: drugs,
-  pettyGodsOfVaarn: gods,
-  tradeCaravan: tradeCaravan,
-  youFoundACorpse: corpse,
-  fineDining: fineDining,
-  gnomonCityBuildings: buildings,
-  gnomonCityMerchants: merchants,
-  gnomonNobleHouses: nobleHouse,
-  gnomonTradeCartels: tradeCartels,
-  gnomonUrbanShrines: urbanShrines,
-  gnomonPitFighters: pitFighters,
-  gnomonPhilosophersGuild: philosophers,
-  gnomonGangOfCriminals: gang,
-  gnomonTavern: tavern,
+const assortedTables = (t, name) => {
+  const lookup = {
+    quickNPCGenerator: NPC(t),
+    booksOfVaarn: books(t),
+    drugsOfVaarn: drugs(t),
+    pettyGodsOfVaarn: gods(t),
+    tradeCaravan: tradeCaravan(t),
+    youFoundACorpse: corpse(t),
+    fineDining: fineDining(t),
+    gnomonCityBuildings: buildings(t),
+    gnomonCityMerchants: merchants(t),
+    gnomonNobleHouses: nobleHouse(t),
+    gnomonTradeCartels: tradeCartels(t),
+    gnomonUrbanShrines: urbanShrines(t),
+    gnomonPitFighters: pitFighters(t),
+    gnomonPhilosophersGuild: philosophers(t),
+    gnomonGangOfCriminals: gang(t),
+    gnomonTavern: tavern(t),
+  };
+  return lookup[name];
 };
 
 export default assortedTables;

@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { camelize, rollAllTables, rollNdX } from "../data/utils";
 import assortedTables from "../data/assorted";
 import styles from "../styles/Home.module.css";
@@ -8,6 +11,7 @@ const Assorted = () => {
   const [numberOf, setNumberOf] = useState(1);
   const [refresher, setRefresher] = useState(1);
   const [entries, setEntries] = useState([]);
+  const { t } = useTranslation("common");
   const selectGenerator = (e) => {
     setGenerator(e.target.value);
   };
@@ -26,7 +30,7 @@ const Assorted = () => {
     let holder = [];
     console.log(camelize(gen));
     while (i < qty) {
-      holder.push(rollAllTables(assortedTables[camelize(gen)]));
+      holder.push(rollAllTables(assortedTables(t, camelize(gen))));
       i++;
     }
     setEntries(holder);
@@ -36,7 +40,7 @@ const Assorted = () => {
       {!generator || !numberOf ? null : (
         <>
           <h2>
-            {numberOf}x {generator}
+            {numberOf}x {t(generator)}
           </h2>
           <div className={styles.cardcontainer}>
             {entries.map((entry, i) => {
@@ -68,32 +72,54 @@ const Assorted = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>Assorted generators</h1>
+        <h1>{t("Assorted generators")}</h1>
         <label>
-          Choose an object to generate:{" "}
+          {t("Choose an object to generate")}{" "}
           <select onChange={selectGenerator} defaultValue="">
             <option value="">---</option>
-            <option>Quick NPC Generator</option>
-            <option>Books of Vaarn</option>
-            <option>Drugs of Vaarn</option>
-            <option>Petty Gods of Vaarn</option>
-            <option>Trade Caravan</option>
-            <option>You Found a Corpse</option>
-            <option>Fine Dining</option>
-            <option>Gnomon - City Buildings</option>
-            <option>Gnomon - City Merchants</option>
-            <option>Gnomon - Noble Houses</option>
-            <option>Gnomon - Trade Cartels</option>
-            <option>Gnomon - Urban Shrines</option>
-            <option>Gnomon - Pit Fighters</option>
-            <option>Gnomon - Philosophers guild</option>
-            <option>Gnomon - Gang of Criminals</option>
-            <option>Gnomon - Tavern</option>
+            <option value="Quick NPC Generator">
+              {t("Quick NPC Generator")}
+            </option>
+            <option value="Books of Vaarn">{t("Books of Vaarn")}</option>
+            <option value="Drugs of Vaarn">{t("Drugs of Vaarn")}</option>
+            <option value="Petty Gods of Vaarn">
+              {t("Petty Gods of Vaarn")}
+            </option>
+            <option value="Trade Caravan">{t("Trade Caravan")}</option>
+            <option value="You Found a Corpse">
+              {t("You Found a Corpse")}
+            </option>
+            <option value="Fine Dining">{t("Fine Dining")}</option>
+            <option value="Gnomon - City Buildings">
+              {t("Gnomon - City Buildings")}
+            </option>
+            <option value="Gnomon - City Merchants">
+              {t("Gnomon - City Merchants")}
+            </option>
+            <option value="Gnomon - Noble Houses">
+              {t("Gnomon - Noble Houses")}
+            </option>
+            <option value="Gnomon - Trade Cartels">
+              {t("Gnomon - Trade Cartels")}
+            </option>
+            <option value="Gnomon - Urban Shrines">
+              {t("Gnomon - Urban Shrines")}
+            </option>
+            <option value="Gnomon - Pit Fighters">
+              {t("Gnomon - Pit Fighters")}
+            </option>
+            <option value="Gnomon - Philosophers guild">
+              {t("Gnomon - Philosophers guild")}
+            </option>
+            <option value="Gnomon - Gang of Criminals">
+              {t("Gnomon - Gang of Criminals")}
+            </option>
+            <option value="Gnomon - Tavern">{t("Gnomon - Tavern")}</option>
           </select>
         </label>
         <p>
           <label>
-            How many to generate
+            {t("How many to generate")}
             <input
               type="number"
               min={1}
@@ -108,7 +134,7 @@ const Assorted = () => {
               setRefresher(refresher + 1);
             }}
           >
-            Regenerate
+            {t("Regenerate")}
           </button>
         </p>
         {content}
@@ -116,4 +142,13 @@ const Assorted = () => {
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], null, ["en", "ko"])),
+    },
+  };
+}
+
 export default Assorted;

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
 
 import styles from "../styles/Home.module.css";
 
@@ -81,36 +82,37 @@ const Characters = () => {
     setMysticGift(rollAllTables(mysticGifts.rolls));
     setCybernetic(rollAllTables(cybernetics.rolls));
   };
-
+  const { t } = useTranslation("common");
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1>Character Generator</h1>
-        <button onClick={reroll}>Roll a new one!</button>
+        <h1>{t("Character Generator")}</h1>
+        <button onClick={reroll}>{t("Roll a new one!")}</button>
         <label>
-          Select an Ancestry (--- will choose one at random):{" "}
+          {t("Select an Ancestry (--- will choose one at random)")}:{" "}
           <select onChange={(e) => setManualChosenAncestry(e.target.value)}>
             <option value="">---</option>
-            <option value="Cacklemaw Exile">Cacklemaw Exile</option>
-            <option value="Cacogen">Cacogen</option>
-            <option value="Faa Nomad">Faa Nomad</option>
-            <option value="Lithling">Lithling</option>
-            <option value="Mycomorph">Mycomorph</option>
-            <option value="Newbeast">Newbeast</option>
-            <option value="Planeyfolk">Planeyfolk</option>
-            <option value="Synth">Synth</option>
-            <option value="True-Kin">True-Kin</option>
+            <option value="Cacklemaw Exile">{t("Cacklemaw Exile")}</option>
+            <option value="Cacogen">{t("Cacogen")}</option>
+            <option value="Faa Nomad">{t("Faa Nomad")}</option>
+            <option value="Lithling">{t("Lithling")}</option>
+            <option value="Mycomorph">{t("Mycomorph")}</option>
+            <option value="Newbeast">{t("Newbeast")}</option>
+            <option value="Planeyfolk">{t("Planeyfolk")}</option>
+            <option value="Synth">{t("Synth")}</option>
+            <option value="True-Kin">{t("True-Kin")}</option>
           </select>
         </label>
         <div className={styles.flex}>
           <div>
             <p>
-              <b>Ancestry:</b> {chosenAncestry.name}
+              <b>{t("Ancestry")}:</b> {chosenAncestry.name}
             </p>
             {abilities.map((ability, i) => {
               return (
                 <p key={ability}>
-                  <b>{ability}</b>: +{stats[i]} <b>Defense:</b> {stats[i] + 10}
+                  <b>{ability}</b>: +{stats[i]} <b>{t("Defense")}:</b>{" "}
+                  {stats[i] + 10}
                 </p>
               );
             })}
@@ -130,11 +132,11 @@ const Characters = () => {
         </div>
         <div className={styles.flex}>
           <div>
-            <h3>Ancestry Description</h3>
+            <h3>{t("Ancestry Description")}</h3>
             <p> {chosenAncestry.description}</p>
           </div>
           <div>
-            <h3>Special Abilities</h3>
+            <h3>{t("Special Abilities")}</h3>
             {chosenAncestry.special &&
               chosenAncestry.special.map((special) => {
                 return <p key={special}>{special}</p>;
@@ -143,10 +145,10 @@ const Characters = () => {
         </div>
         <div className={styles.flex}>
           <div>
-            <h3>Starting Equipment</h3>
+            <h3>{t("Starting Equipment")}</h3>
             {weapon.length && (
               <ColonRoll
-                rollName="Weapon"
+                rollName={t("Weapon")}
                 value={
                   weapon[0].value +
                   " " +
@@ -158,13 +160,13 @@ const Characters = () => {
             )}
             {armor.length && (
               <ColonRoll
-                rollName="Armor"
+                rollName={t("Armor")}
                 value={armor[0].value + ", " + armor[1].value}
               />
             )}
             {gear.length && (
               <ColonRoll
-                rollName="Gear"
+                rollName={t("Gear")}
                 value={gear[0].value + ", " + gear[1].value}
               />
             )}
@@ -172,7 +174,7 @@ const Characters = () => {
           <div>
             <h3>Extra Gifts</h3>
             {exotica.length && (
-              <ColonRoll rollName="Exotica" value={exotica[0].value} />
+              <ColonRoll rollName={t("Exotica")} value={exotica[0].value} />
             )}
             <p>
               <em>Choose one of the two below</em>
