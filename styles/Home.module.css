@@ -156,6 +156,7 @@
   border-color: #5af; /* or whatever colour */
   border-style: solid; /* or whatever style */
   content: " ";
+  margin: -10px;
 }
 .card:before {   background-color: #155352;   color: #b1c9c3;
   top: 0;
