@@ -15,6 +15,7 @@
   border-color: #5af; /* or whatever colour */
   border-style: solid; /* or whatever style */
   content: " ";
+  margin: -10px
 }
 .location:before {
   top: 0;
