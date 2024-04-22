@@ -181,7 +181,7 @@ const philosophers = (t) => {
         t("Synth, Who Assists With Experiments"),
       ],
     },
-    { name: t("Source of Conflict"), options: sourceOfConflict },
+    { name: t("Source of Conflict"), options: sourceOfConflict(t) },
     {
       name: t("NPC B"),
       options: [

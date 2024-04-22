@@ -177,7 +177,7 @@ const gang = (t) => {
         t("Sharp-eyed Lookout"),
       ],
     },
-    { name: t("Source of Conflict"), options: sourceOfConflict },
+    { name: t("Source of Conflict"), options: sourceOfConflict(t) },
     {
       name: t("NPC B"),
       options: [

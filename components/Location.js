@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "next-i18next";
 import regions from "../data/locations/regions";
 import { randomFromArray, rollAllTables, camelize } from "../data/utils";
 import ConcatRoll from "./concatRoll";
 import styles from "./Location.module.css";
 
 const Location = ({ number, refresh }) => {
+  const { t } = useTranslation("common");
   const [locationType, setLocationType] = useState("");
   const [details, setDetails] = useState([]);
   useEffect(() => {
@@ -17,20 +19,21 @@ const Location = ({ number, refresh }) => {
     refresher();
   }, [locationType, refresh]);
   const refresher = () => {
-    if (locationType && regions[camelize(locationType)]) {
-      setDetails(rollAllTables(regions[camelize(locationType)]));
+    if (locationType && regions(t, camelize(locationType))) {
+      setDetails(rollAllTables(regions(t, camelize(locationType))));
     } else {
       setDetails([]);
     }
   };
+  console.log(regions(t, "locationType"));
   const roll = () => {
-    setLocationType(randomFromArray(regions.locationType));
+    setLocationType(randomFromArray(regions(t, "locationType")));
   };
 
   return (
     <div className={styles.location}>
       <h3>
-        {number} {locationType}
+        {number} {t(locationType)}
       </h3>
       {details && (
         <>

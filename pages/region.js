@@ -7,6 +7,7 @@ import { randomFromArray } from "../data/utils";
 import regions from "../data/locations/regions";
 import MapGenerator from "../components/MapGenerator";
 const Region = () => {
+  const { t } = useTranslation("common");
   const [locationCount, setLocationCount] = useState(["", "", "", ""]);
   const [landscape, setLandscape] = useState("");
   const [namesake, setNamesake] = useState("");
@@ -19,20 +20,19 @@ const Region = () => {
     roll();
   }, []);
   const roll = () => {
-    setLandscape(randomFromArray(regions.landscape));
-    setNamesake(randomFromArray(regions.namesake));
+    setLandscape(randomFromArray(regions(t, "landscape")));
+    setNamesake(randomFromArray(regions(t, "namesake")));
     setStorySeed(
-      randomFromArray(regions.genericStorySeeds.npcA) +
+      randomFromArray(regions(t, "genericStorySeeds").npcA) +
         " wants to " +
-        randomFromArray(regions.genericStorySeeds.wants) +
+        randomFromArray(regions(t, "genericStorySeeds").wants) +
         " " +
-        randomFromArray(regions.genericStorySeeds.npcB) +
+        randomFromArray(regions(t, "genericStorySeeds").npcB) +
         ". However, there is a complication in the form of " +
-        randomFromArray(regions.genericStorySeeds.complication)
+        randomFromArray(regions(t, "genericStorySeeds").complication)
     );
     setRefresh(refresh + 1);
   };
-  const { t } = useTranslation("common");
   return (
     <div className={styles.container}>
       <main className={styles.main}>

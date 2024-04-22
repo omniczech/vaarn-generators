@@ -1,4 +1,4 @@
-import cacklemaw from "./cacklemaw.json";
+import cacklemaw from "./cacklemaw";
 import cacogen from "./cacogen.json";
 import faa from "./faaNomad.json";
 import lithling from "./lithling.json";
