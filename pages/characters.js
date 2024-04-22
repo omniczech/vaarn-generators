@@ -24,7 +24,7 @@ const generateAbility = () => {
 };
 
 const abilities = [
-  "힘",
+  "근력",
   "민첩",
   "건강",
   "지능",
