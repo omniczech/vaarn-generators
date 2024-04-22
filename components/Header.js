@@ -8,7 +8,7 @@ const Header = () => {
       <Link href="/characters">캐릭터</Link>
       <Link href="/region">지역</Link>
       <Link href="/vaults">볼트</Link>
-      <Link href="/assorted">여러 종류의 생성기</Link>
+      <Link href="/assorted">그 외 여러가지 생성기</Link>
     </header>
   );
 };
