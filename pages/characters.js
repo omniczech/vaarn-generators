@@ -4,9 +4,9 @@ import { useTranslation } from "next-i18next";
 import styles from "../styles/Home.module.css";
 
 import allAncestries from "../data/characters";
-import weapons from "../data/equipment/weapons.json";
-import armors from "../data/equipment/armor.json";
-import gears from "../data/equipment/gear.json";
+import weapons from "../data/equipment/weapons";
+import armors from "../data/equipment/armor";
+import gears from "../data/equipment/gear";
 import exoticas from "../data/equipment/exotica";
 import mysticGifts from "../data/equipment/mysticGifts";
 import cybernetics from "../data/equipment/cybernetics";
@@ -34,6 +34,7 @@ const abilities = [
 ];
 
 const Characters = () => {
+  const { t } = useTranslation("common");
   const [chosenAncestry, setChosenAncestry] = useState("");
   const [manualChosenAncestry, setManualChosenAncestry] = useState("");
 
@@ -68,21 +69,23 @@ const Characters = () => {
       generateAbility(),
     ]);
     !manualChosenAncestry
-      ? setChosenAncestry(randomFromArray(allAncestries))
+      ? setChosenAncestry(randomFromArray(allAncestries(t)))
       : setChosenAncestry(
-          allAncestries.filter((ancestry) => {
+          allAncestries(t).filter((ancestry) => {
+            console.log(ancestry);
             return ancestry.name === manualChosenAncestry;
           })[0]
         );
     setRollTables(rollAllTables(chosenAncestry.rolls));
-    setWeapon(rollAllTables(weapons.rolls));
-    setArmor(rollAllTables(armors.rolls));
-    setGear(rollAllTables(gears.rolls));
-    setExotica(rollAllTables(exoticas.rolls));
-    setMysticGift(rollAllTables(mysticGifts.rolls));
-    setCybernetic(rollAllTables(cybernetics.rolls));
+    setWeapon(rollAllTables(weapons(t).rolls));
+    setArmor(rollAllTables(armors(t).rolls));
+    setGear(rollAllTables(gears(t).rolls));
+    setExotica(rollAllTables(exoticas(t).rolls));
+    setMysticGift(rollAllTables(mysticGifts(t).rolls));
+    setCybernetic(rollAllTables(cybernetics(t).rolls));
   };
-  const { t } = useTranslation("common");
+
+  console.log(allAncestries(t));
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -146,7 +149,7 @@ const Characters = () => {
         <div className={styles.flex}>
           <div>
             <h3>{t("Starting Equipment")}</h3>
-            {weapon.length && (
+            {weapon?.length && (
               <ColonRoll
                 rollName={t("Weapon")}
                 value={
@@ -158,13 +161,13 @@ const Characters = () => {
                 }
               />
             )}
-            {armor.length && (
+            {armor?.length && (
               <ColonRoll
                 rollName={t("Armor")}
                 value={armor[0].value + ", " + armor[1].value}
               />
             )}
-            {gear.length && (
+            {gear?.length && (
               <ColonRoll
                 rollName={t("Gear")}
                 value={gear[0].value + ", " + gear[1].value}
@@ -173,13 +176,13 @@ const Characters = () => {
           </div>
           <div>
             <h3>Extra Gifts</h3>
-            {exotica.length && (
+            {exotica?.length && (
               <ColonRoll rollName={t("Exotica")} value={exotica[0].value} />
             )}
             <p>
               <em>Choose one of the two below</em>
             </p>
-            {mysticGift.length && (
+            {mysticGift?.length && (
               <ColonRoll
                 rollName="Mystical Gift"
                 value={
@@ -190,7 +193,7 @@ const Characters = () => {
                 }
               />
             )}
-            {cybernetic.length && (
+            {cybernetic?.length && (
               <ColonRoll
                 rollName="Cybernetic"
                 value={

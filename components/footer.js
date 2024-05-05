@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import styles from "../styles/Home.module.css";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <footer className={styles.footer}>
       <p>
