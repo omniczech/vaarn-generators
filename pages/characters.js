@@ -104,6 +104,9 @@ const Characters = () => {
             <option value="Planeyfolk">{t("Planeyfolk")}</option>
             <option value="Synth">{t("Synth")}</option>
             <option value="True-Kin">{t("True-Kin")}</option>
+            <option value="Harpy">{t("Harpy")}</option>
+            <option value="Stratosfolk">{t("Stratosfolk")}</option>
+            <option value="Wallborn">{t("Wallborn")}</option>
           </select>
         </label>
         <div className={styles.flex}>

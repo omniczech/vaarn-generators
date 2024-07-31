@@ -7,6 +7,9 @@ import newbeast from "./newbeast";
 import planeyfolk from "./planeyfolk";
 import synth from "./synths";
 import truekin from "./true-kin";
+import wallborn from "./wallborn";
+import harpy from "./harpy";
+import stratosfolk from "./stratosfolk";
 
 const allAncestries = (t) => {
   return [
@@ -19,6 +22,9 @@ const allAncestries = (t) => {
     newbeast(t),
     synth(t),
     truekin(t),
+    wallborn(t),
+    harpy(t),
+    stratosfolk(t),
   ];
 };
 
