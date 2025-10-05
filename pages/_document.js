@@ -14,6 +14,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap"
           rel="stylesheet"
         ></link>
+        <link href="/print.css" media="print" rel="stylesheet" />
       </Head>
       <body>
         <Main />
